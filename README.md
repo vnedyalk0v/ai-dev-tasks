@@ -265,6 +265,223 @@ Prevent the 10 most common AI development mistakes:
 - **Testing Completeness:** Prevents gaps in test coverage and edge case handling
 - **Standards Recovery:** Emergency procedures when standards are violated
 
+## 🚀 **How to Set Up for Cursor IDE**
+
+### **📥 Installation & Initial Setup**
+
+1. **Download & Install Cursor:**
+
+   - Visit [cursor.com](https://cursor.com) and download for your OS
+   - Run installer and complete setup wizard
+   - Sign up for free account (includes 14-day Pro trial)
+
+2. **Import VS Code Settings (Optional):**
+
+   - During first launch, Cursor will offer to import VS Code extensions, themes, and settings
+   - Accept if you're migrating from VS Code for familiar experience
+
+3. **Configure Essential Settings:**
+   - Go to `Cursor` > `Settings` > `Cursor Settings`
+   - Enable **Codebase Indexing** for better AI context
+   - Set your preferred AI model in **Models** section
+   - Configure **Privacy** settings according to your needs
+
+### **📁 Framework Files Setup**
+
+#### **Directory Structure:**
+
+Place all framework files in your main development directory:
+
+```
+your-development-folder/
+├── ai-dev-framework/
+│   ├── project-information-template.md
+│   ├── project-information-example.md
+│   ├── create-project-spec.mdc
+│   ├── generate-project-tasks.mdc
+│   ├── process-project-tasks.mdc
+│   ├── project-structure-guide.mdc
+│   ├── development-standards-checklist.mdc
+│   └── README.md
+└── your-projects/
+    ├── project-1/
+    └── project-2/
+```
+
+#### **Always Load These Files:**
+
+Configure Cursor to always have access to these core framework files by:
+
+1. **Adding to Cursor Workspace:**
+
+   - Open Cursor and go to `File` > `Add Folder to Workspace`
+   - Add your `ai-dev-framework` folder
+
+2. **Pin Important Files:**
+   - Keep these files pinned as tabs for quick access:
+     - `process-project-tasks.mdc` (most frequently used during development)
+     - `development-standards-checklist.mdc` (used in every quality validation)
+     - `project-structure-guide.mdc` (prevents common mistakes)
+
+#### **On-Demand Files:**
+
+Load these when starting new projects or specific phases:
+
+- `project-information-template.md` (when gathering requirements)
+- `create-project-spec.mdc` (when creating project specifications)
+- `generate-project-tasks.mdc` (when generating development roadmaps)
+
+### **⚙️ Cursor Configuration for AI Development**
+
+#### **Essential Settings:**
+
+1. **AI Rules Configuration:**
+
+   ```
+   Cursor > Settings > General > Rules for AI
+   ```
+
+   Add these rules:
+
+   ```
+   - Always prioritize security and follow zero-vulnerability practices
+   - Use clean code principles and DRY methodology
+   - Validate file locations against project structure before creating files
+   - Check development standards checklist for every implementation
+   - Maintain consistent naming conventions throughout the project
+   ```
+
+2. **Codebase Indexing:**
+
+   ```
+   Cursor > Settings > Features > Codebase Indexing
+   ```
+
+   - ✅ Enable "Default Index New Files"
+   - ✅ Enable "Git Graph Relations"
+   - Add large files to ignore list
+
+3. **Chat Settings:**
+   ```
+   Cursor > Settings > Features > Chat and Composer
+   ```
+   - ✅ Enable "Auto-scroll to Bottom"
+   - ✅ Enable "Auto-apply to Out-of-context Files"
+
+### **🎯 Using the Framework with Cursor**
+
+#### **Starting a New Project:**
+
+```bash
+# Method 1: Using structured template
+Use @create-project-spec.mdc
+Here's the application/project information.md
+
+# Method 2: Direct description
+Use @create-project-spec.mdc
+Here's the application I want to build: [Your description]
+```
+
+#### **Generating Development Tasks:**
+
+```bash
+Use @generate-project-tasks.mdc
+Reference: @project-spec-[your-project-name].md
+```
+
+#### **During Development:**
+
+```bash
+Use @process-project-tasks.mdc
+Current task: [Phase X, Task Y]
+Reference: @project-structure.md
+```
+
+#### **Quality Validation:**
+
+```bash
+Use @development-standards-checklist.mdc
+Validate implementation for: [specific task or feature]
+```
+
+### **⌨️ Essential Cursor Shortcuts**
+
+| Shortcut           | Action               | Usage with Framework                                 |
+| ------------------ | -------------------- | ---------------------------------------------------- |
+| `Ctrl+L` (`Cmd+L`) | Open AI Chat         | Primary way to interact with framework files         |
+| `Ctrl+K` (`Cmd+K`) | Inline AI Edit       | Quick code modifications following standards         |
+| `Ctrl+I` (`Cmd+I`) | Composer Mode        | Complex multi-file changes with structure validation |
+| `@filename`        | Reference File       | Essential for using framework files                  |
+| `Tab`              | Accept AI Suggestion | Accept code that follows established conventions     |
+
+### **📝 Framework File Reference Patterns**
+
+#### **Project Planning Phase:**
+
+```bash
+@create-project-spec.mdc + @project-information-template.md
+```
+
+#### **Development Phase:**
+
+```bash
+@process-project-tasks.mdc + @project-structure.md + @development-standards-checklist.mdc
+```
+
+#### **Quality Validation:**
+
+```bash
+@development-standards-checklist.mdc + @project-structure.md
+```
+
+### **🔧 Advanced Configuration**
+
+#### **Custom Keybindings:**
+
+Add these to your Cursor keybindings for faster framework access:
+
+```json
+{
+  "key": "ctrl+shift+f",
+  "command": "workbench.action.quickOpen",
+  "args": "@process-project-tasks.mdc"
+},
+{
+  "key": "ctrl+shift+s",
+  "command": "workbench.action.quickOpen",
+  "args": "@development-standards-checklist.mdc"
+}
+```
+
+#### **Workspace Settings:**
+
+Create `.vscode/settings.json` in your framework folder:
+
+```json
+{
+  "cursor.chat.defaultModel": "claude-4-sonnet",
+  "cursor.indexing.enabled": true,
+  "cursor.chat.autoScroll": true
+}
+```
+
+### **📚 Additional Resources**
+
+- **Official Cursor Documentation:** [docs.cursor.com](https://docs.cursor.com)
+- **Cursor Community Forum:** [forum.cursor.com](https://forum.cursor.com)
+- **Video Tutorials:** Search "Cursor AI setup" on YouTube for visual guides
+- **VS Code Migration Guide:** Available in Cursor docs for smooth transition
+
+### **💡 Pro Tips for Framework Usage**
+
+1. **Keep Framework Files Updated:** Regularly update your framework files with lessons learned
+2. **Use Consistent Referencing:** Always use `@filename` to reference framework files for better context
+3. **Maintain File Organization:** Keep your framework files in a dedicated, easily accessible folder
+4. **Regular Validation:** Use the development standards checklist after every major task
+5. **Document Customizations:** Note any project-specific modifications to framework files
+
+**Remember:** The framework files work best when Cursor has full context. Always reference the relevant framework files in your prompts for optimal AI assistance!
+
 ## Key Features
 
 - **Technology Decision Guidance:** Systematic approach to selecting optimal tech stacks
