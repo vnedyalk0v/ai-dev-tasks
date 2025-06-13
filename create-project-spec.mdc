@@ -7,12 +7,12 @@ alwaysApply: false
 
 ## Goal
 
-To guide an AI assistant in creating a comprehensive Project Specification Document (PSD) in Markdown format, based on an initial project idea or requirements. The PSD should be clear, actionable, and suitable for a development team to understand and implement the entire project from conception to deployment.
+To guide an AI assistant in creating a comprehensive Project Specification Document (PSD) in Markdown format for developing high-quality applications. The PSD should ensure consistency, security, performance, and maintainability across all development projects, whether building HRM systems, portfolio websites, product websites, or other applications.
 
 ## Process
 
-1.  **Receive Initial Prompt:** The user provides a brief description or request for a new project or application.
-2.  **Ask Clarifying Questions:** Before writing the PSD, the AI *must* ask clarifying questions to gather sufficient detail about the project scope, technical requirements, constraints, and objectives.
+1.  **Receive Initial Prompt:** The user provides a brief description or request for a new application project.
+2.  **Ask Clarifying Questions:** Before writing the PSD, the AI *must* ask clarifying questions to gather sufficient detail about the project scope, technical requirements, and quality standards.
 3.  **Generate PSD:** Based on the initial prompt and the user's answers, generate a PSD using the structure outlined below.
 4.  **Save PSD:** Save the generated document as `project-spec-[project-name].md` inside the `/project` directory.
 
@@ -21,55 +21,56 @@ To guide an AI assistant in creating a comprehensive Project Specification Docum
 The AI should adapt its questions based on the prompt, but here are key areas to explore:
 
 ### Project Scope & Vision
-*   **Project Vision:** "What is the overall vision and main purpose of this project?"
-*   **Target Audience:** "Who are the primary users/customers of this application?"
-*   **Core Value Proposition:** "What key problem does this project solve, and what makes it unique?"
-*   **Project Scale:** "Is this a small utility, medium web app, or large-scale enterprise system?"
+*   **Project Vision:** "What is the overall vision and main purpose of this application?"
+*   **Target Audience:** "Who are the primary users of this application?"
+*   **Core Value Proposition:** "What key problem does this application solve, and what makes it unique?"
+*   **Project Scale:** "Is this a small utility, medium web app, or large-scale application?"
 
 ### Technical Requirements
-*   **Platform:** "What platforms should this run on? (Web, mobile, desktop, cloud, etc.)"
+*   **Platform:** "What platforms should this run on? (Web, mobile, desktop, etc.)"
 *   **Technology Stack:** "Do you have preferences for programming languages, frameworks, or databases?"
-*   **Architecture:** "Any specific architectural patterns or constraints? (microservices, monolith, serverless, etc.)"
+*   **Architecture:** "Any specific architectural patterns or constraints? (MVC, component-based, etc.)"
 *   **Integrations:** "Does this need to integrate with external services, APIs, or existing systems?"
-*   **Performance:** "Are there specific performance, scalability, or availability requirements?"
+*   **Performance:** "Are there specific performance requirements or expected user loads?"
 
 ### Features & Functionality
-*   **Core Features:** "What are the 3-5 most important features this project must have?"
+*   **Core Features:** "What are the 3-5 most important features this application must have?"
 *   **User Roles:** "Are there different types of users with different permissions/capabilities?"
 *   **Data Management:** "What kind of data will be stored, processed, or displayed?"
 *   **User Interface:** "Any specific UI/UX requirements or design preferences?"
 
-### Project Constraints
-*   **Timeline:** "What's the target timeline or key milestones?"
-*   **Budget/Resources:** "Are there budget constraints or team size considerations?"
-*   **Compliance:** "Any regulatory, security, or compliance requirements?"
-*   **Deployment:** "Where and how should this be deployed? (cloud provider, on-premise, etc.)"
+### Quality & Standards
+*   **Security Requirements:** "Any specific security requirements or sensitive data handling needs?"
+*   **Performance Standards:** "What are the expected response times and performance benchmarks?"
+*   **Browser/Device Support:** "Which browsers, devices, or operating systems need to be supported?"
+*   **Accessibility:** "Are there accessibility requirements (WCAG compliance, etc.)?"
 
-### Success Criteria
-*   **Success Metrics:** "How will you measure if this project is successful?"
-*   **Launch Criteria:** "What needs to be complete for a successful launch?"
+### Development Constraints
+*   **Timeline:** "What's the target timeline or key milestones?"
+*   **Team Size:** "Will this be developed solo or with a team?"
+*   **Existing Codebase:** "Is this a new project or extending existing code?"
 
 ## PSD Structure
 
 The generated PSD should include the following sections:
 
 ### 1. Project Overview
-*   **Project Name & Description:** Clear, concise project summary
+*   **Project Name & Description:** Clear, concise application summary
 *   **Vision Statement:** High-level project vision and goals
 *   **Target Audience:** Primary and secondary user groups
 *   **Value Proposition:** Key benefits and competitive advantages
 
 ### 2. Project Scope
-*   **In Scope:** What the project will include
-*   **Out of Scope:** What the project will NOT include (to manage expectations)
-*   **Success Criteria:** Measurable goals and KPIs
+*   **In Scope:** What the application will include
+*   **Out of Scope:** What the application will NOT include (to manage expectations)
+*   **Success Criteria:** Measurable goals and quality standards
 *   **Assumptions:** Key assumptions being made
 
 ### 3. Technical Architecture
 *   **Technology Stack:** Programming languages, frameworks, databases, tools
-*   **System Architecture:** High-level architecture diagram/description
-*   **Infrastructure Requirements:** Hosting, deployment, scaling considerations
-*   **Security Requirements:** Authentication, authorization, data protection
+*   **System Architecture:** High-level architecture description and patterns
+*   **Development Environment:** Local development setup requirements
+*   **Security Architecture:** Authentication, authorization, data protection approaches
 *   **Integration Requirements:** External APIs, services, or systems
 
 ### 4. Feature Requirements
@@ -79,32 +80,34 @@ The generated PSD should include the following sections:
 *   **Data Model:** Key entities and relationships
 *   **API Requirements:** External interfaces needed
 
-### 5. Non-Functional Requirements
-*   **Performance:** Response times, throughput, concurrent users
-*   **Scalability:** Growth expectations and scaling strategy
-*   **Reliability:** Uptime requirements, error handling
-*   **Security:** Data protection, compliance requirements
-*   **Usability:** User experience standards
+### 5. Quality Standards
+*   **Performance Requirements:** Response times, load handling, optimization targets
+*   **Security Requirements:** Data protection, authentication standards, vulnerability prevention
+*   **Code Quality Standards:** Coding conventions, documentation requirements, testing standards
+*   **Browser/Device Compatibility:** Support requirements and responsive design needs
+*   **Accessibility Standards:** WCAG compliance levels and accessibility features
 
-### 6. Project Phases
-*   **Phase 1 - Project Setup:** Repository, development environment, CI/CD
-*   **Phase 2 - Core Infrastructure:** Database, authentication, basic architecture
+### 6. Development Phases
+*   **Phase 1 - Project Setup:** Repository structure, development environment, coding standards
+*   **Phase 2 - Core Architecture:** Database design, authentication, foundational components
 *   **Phase 3 - MVP Features:** Essential user-facing functionality
 *   **Phase 4 - Advanced Features:** Additional functionality beyond MVP
-*   **Phase 5 - Testing & Deployment:** Comprehensive testing, production deployment
-*   **Phase 6 - Launch & Monitoring:** Go-live, monitoring, maintenance
+*   **Phase 5 - Testing & Quality Assurance:** Comprehensive testing and code review
+*   **Phase 6 - Performance & Security Optimization:** Performance tuning and security hardening
 
-### 7. Technical Considerations
-*   **Development Environment:** Setup requirements and tools
-*   **Testing Strategy:** Unit, integration, and end-to-end testing approach
-*   **Deployment Strategy:** CI/CD pipeline, environments (dev/staging/prod)
-*   **Monitoring & Logging:** Application monitoring and error tracking
-*   **Documentation:** Code documentation and user guides
+### 7. Development Standards
+*   **Coding Conventions:** Style guides, naming conventions, file organization
+*   **Testing Strategy:** Unit, integration, and end-to-end testing approaches
+*   **Documentation Requirements:** Code documentation, API documentation, user guides
+*   **Security Practices:** Secure coding practices, vulnerability prevention
+*   **Performance Guidelines:** Optimization strategies and monitoring approaches
 
-### 8. Project Timeline
-*   **Key Milestones:** Major project checkpoints
-*   **Dependencies:** External dependencies that could impact timeline
-*   **Risk Assessment:** Potential risks and mitigation strategies
+### 8. Technical Considerations
+*   **Database Design:** Schema planning, indexing, performance considerations
+*   **State Management:** Client-side state handling and data flow patterns
+*   **Error Handling:** Error management strategies and user feedback
+*   **Logging & Monitoring:** Application logging and performance monitoring during development
+*   **Responsive Design:** Mobile-first approach and cross-device compatibility
 
 ### 9. Open Questions
 *   List any remaining questions or areas needing further clarification
@@ -113,7 +116,7 @@ The generated PSD should include the following sections:
 
 ## Target Audience
 
-Assume the primary readers are **software developers and project stakeholders**. The document should be detailed enough for technical implementation while remaining accessible to non-technical stakeholders.
+Assume the primary readers are **software developers** who will implement the application. The document should provide sufficient technical detail for consistent, secure, and performant development.
 
 ## Output
 
@@ -124,6 +127,7 @@ Assume the primary readers are **software developers and project stakeholders**.
 ## Final Instructions
 
 1. Do NOT start implementing the project
-2. Make sure to ask comprehensive clarifying questions covering all major areas
-3. Take the user's answers and create a thorough, well-structured PSD
-4. Focus on creating a complete project roadmap, not just a single feature
+2. Make sure to ask comprehensive clarifying questions covering all major development areas
+3. Take the user's answers and create a thorough, development-focused PSD
+4. Focus on ensuring consistency, security, and performance in the application development
+5. Exclude deployment, hosting, and CI/CD considerations - focus purely on building the application
