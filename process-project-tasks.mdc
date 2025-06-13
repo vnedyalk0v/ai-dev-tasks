@@ -72,14 +72,22 @@ While working on development tasks, you must:
 ### Post-Development Task Activities
 After completing each major development task, you must:
 1. **Update task list:** Mark the major task as complete and update the project structure
-2. **Comprehensive code review:** Perform self-review of implemented code for quality, security, performance, DRY compliance, and clean code principles
-3. **Security validation:** Verify no vulnerabilities have been introduced and security best practices are followed
-4. **Performance testing:** Validate performance implications and optimize where necessary
-5. **SEO validation:** Ensure SEO best practices are implemented for user-facing features
-6. **Testing:** Run relevant tests (unit, integration, security) and ensure new functionality works correctly
-7. **Documentation updates:** Update relevant code documentation, API documentation, and SEO documentation
-8. **Request approval:** Ask the user to review the implemented functionality before proceeding
-9. **Suggest next steps:** Recommend the next logical development task(s) based on dependencies and priority
+2. **Run quality validation checks:**
+   - Execute linting tools to check code style and consistency
+   - Run security scanning to detect vulnerabilities
+   - Perform automated testing (unit tests, integration tests)
+   - Check code formatting and consistency
+   - Validate performance benchmarks where applicable
+   - Run accessibility checks for user-facing features
+   - Verify SEO optimization for content-related features
+3. **Comprehensive code review:** Perform self-review of implemented code for quality, security, performance, DRY compliance, and clean code principles
+4. **Security validation:** Verify no vulnerabilities have been introduced and security best practices are followed
+5. **Performance testing:** Validate performance implications and optimize where necessary
+6. **SEO validation:** Ensure SEO best practices are implemented for user-facing features
+7. **Testing:** Run relevant tests (unit, integration, security) and ensure new functionality works correctly
+8. **Documentation updates:** Update relevant code documentation, API documentation, and SEO documentation
+9. **Request approval:** Ask the user to review the implemented functionality and quality validation results before proceeding
+10. **Suggest next steps:** Recommend the next logical development task(s) based on dependencies and priority
 
 ### Cross-Phase Development Considerations
 When transitioning between development phases:
@@ -92,6 +100,44 @@ When transitioning between development phases:
 7. **DRY compliance check:** Verify DRY principles are consistently applied across the codebase
 
 ## Development Quality Management
+
+### Quality Validation Procedures
+Execute these validation checks after each major task completion:
+
+#### Code Quality Validation
+- **Linting:** Run ESLint, Pylint, or language-specific linters to check style and consistency
+- **Formatting:** Verify code formatting with Prettier, Black, or similar tools
+- **Type checking:** Run TypeScript compiler or equivalent for type safety validation
+- **Code standards:** Verify adherence to clean code principles and DRY implementation
+- **Documentation:** Check that code comments and documentation are current and accurate
+
+#### Security Validation
+- **Vulnerability scanning:** Run security scanners (npm audit, Snyk, OWASP ZAP)
+- **Dependency checking:** Verify all dependencies are secure and up-to-date
+- **Input validation:** Test all user inputs for proper sanitization and validation
+- **Authentication testing:** Verify secure authentication and authorization mechanisms
+- **Data protection:** Ensure sensitive data is properly encrypted and protected
+
+#### Performance Validation
+- **Load testing:** Test application performance under expected loads
+- **Memory usage:** Check for memory leaks and optimization opportunities
+- **Database queries:** Analyze query performance and optimization
+- **Bundle size:** Monitor and optimize JavaScript/CSS bundle sizes
+- **Core Web Vitals:** Measure and optimize LCP, FID, CLS metrics
+
+#### Functionality Validation
+- **Unit tests:** Run comprehensive unit test suites with high coverage
+- **Integration tests:** Execute integration tests for component interactions
+- **End-to-end tests:** Run user workflow tests to ensure functionality
+- **Regression testing:** Verify that new changes don't break existing features
+- **Cross-browser testing:** Test functionality across target browsers and devices
+
+#### Accessibility & SEO Validation
+- **Accessibility audits:** Run tools like axe-core or Lighthouse accessibility checks
+- **WCAG compliance:** Verify compliance with accessibility standards
+- **SEO audits:** Use Lighthouse, SEMrush, or similar tools for SEO validation
+- **Meta tag verification:** Check proper implementation of meta tags and structured data
+- **Mobile responsiveness:** Test responsive design across different screen sizes
 
 ### Code Quality Standards
 - **clean code principles:** Follow SOLID principles, meaningful naming, single responsibility, readable code structure

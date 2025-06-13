@@ -30,6 +30,7 @@ Adapt your questions based on the prompt, but here are key areas to explore:
 *   **Platform:** "What platforms should this run on? (Web, mobile, desktop, etc.)"
 *   **Technology Stack:** "Do you have preferences for programming languages, frameworks, or databases?"
 *   **Architecture:** "Any specific architectural patterns or constraints? (MVC, component-based, etc.)"
+*   **Data Requirements:** "Does this application need to store, process, or manage data? If so, what type of data and storage approach?"
 *   **Integrations:** "Does this need to integrate with external services, APIs, or existing systems?"
 *   **Performance:** "Are there specific performance requirements or expected user loads?"
 
@@ -91,12 +92,12 @@ Generate the PSD with the following sections:
 *   **Accessibility Standards:** WCAG compliance levels and accessibility features
 
 ### 6. Development Phases
-*   **Phase 1: Project Setup & Development Environment:** Repository structure, development environment, coding standards, security tools
-*   **Phase 2: Core Architecture & Foundation:** Database design, authentication, foundational components, security implementation
-*   **Phase 3: MVP Feature Development:** Essential user-facing functionality with SEO optimization
-*   **Phase 4: Advanced Features & Integration:** Additional functionality beyond MVP, third-party integrations
-*   **Phase 5: Testing & Quality Assurance:** Comprehensive testing, code review, vulnerability assessment
-*   **Phase 6: Performance & Security Optimization:** Performance tuning, security hardening, SEO enhancement
+*   **Phase 1: Project Setup & Development Environment:** Repository structure, development environment, coding standards, security tools, quality validation setup
+*   **Phase 2: Core Architecture & Foundation:** Database design (if required), authentication (if required), foundational components, security implementation
+*   **Phase 3: MVP Feature Development:** Essential user-facing functionality with SEO optimization, continuous quality validation
+*   **Phase 4: Advanced Features & Integration:** Additional functionality beyond MVP, third-party integrations, performance optimization
+*   **Phase 5: Testing & Quality Assurance:** Comprehensive testing, code review, vulnerability assessment, quality validation
+*   **Phase 6: Performance & Security Optimization:** Performance tuning, security hardening, SEO enhancement, final quality validation
 
 ### 7. Development Standards
 *   **clean code principles:** SOLID principles, readable code, meaningful naming, single responsibility
@@ -106,11 +107,13 @@ Generate the PSD with the following sections:
 *   **Documentation Requirements:** Code documentation, API documentation, user guides
 *   **Security Practices:** Secure coding practices, input validation, vulnerability prevention
 *   **Performance Guidelines:** Optimization strategies, monitoring approaches, lazy loading
+*   **Quality Validation:** Continuous linting, formatting checks, security scanning, performance testing after each task
 
 ### 8. Technical Considerations
-*   **Database Design:** Schema planning, indexing, performance considerations, data integrity
+*   **Data Persistence:** Database schema planning, indexing, performance considerations (only if data storage is required)
 *   **State Management:** Client-side state handling and data flow patterns
 *   **Error Handling:** Comprehensive error management strategies and user feedback
+*   **Quality Validation:** Automated linting, code formatting, security scanning, performance testing procedures
 *   **Logging & Monitoring:** Application logging and performance monitoring during development
 *   **Responsive Design:** Mobile-first approach and cross-device compatibility
 *   **SEO Implementation:** URL structure, meta data, structured markup, sitemap generation
