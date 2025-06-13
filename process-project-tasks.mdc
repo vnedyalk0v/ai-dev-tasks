@@ -264,6 +264,7 @@ Follow this development-focused workflow to ensure systematic progress through a
 
 3. **Quality Validation (After Each Major Task):**
    - **Code Quality:** Run linting, formatting checks, and ensure adherence to coding standards
+   - **Development Standards:** Review development-standards-checklist.mdc for naming consistency, error handling, and common mistake prevention
    - **Security:** Perform vulnerability scanning, dependency checking, and security code review
    - **Performance:** Test load times, optimize bottlenecks, validate Core Web Vitals
    - **Functionality:** Execute unit tests, integration tests, and manual testing

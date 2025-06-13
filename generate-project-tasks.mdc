@@ -107,10 +107,11 @@ Generate the project task list following this structure exactly:
   - [ ] 2.3 Configure TypeScript (if applicable) with strict settings
   - [ ] 2.4 Set up testing framework and configuration
   - [ ] 2.5 Create coding standards and conventions document emphasizing clean code and DRY principles
-  - [ ] 2.6 Configure security scanning tools and vulnerability detection
-  - [ ] 2.7 Set up pre-commit hooks for code quality and security checks
-  - [ ] 2.8 **Update project structure documentation with new tool configurations**
-  - [ ] 2.9 Run quality validation: test all tools, verify configurations work correctly
+  - [ ] 2.6 **Establish development standards using development-standards-checklist.mdc (naming conventions, error handling patterns, validation approaches)**
+  - [ ] 2.7 Configure security scanning tools and vulnerability detection
+  - [ ] 2.8 Set up pre-commit hooks for code quality and security checks
+  - [ ] 2.9 **Update project structure documentation with new tool configurations**
+  - [ ] 2.10 Run quality validation: test all tools, verify configurations work correctly
 - [ ] 3.0 Cross-Platform & Responsive Foundation
   - [ ] 3.1 Set up responsive design system and breakpoints
   - [ ] 3.2 Configure browser compatibility testing tools
@@ -126,56 +127,56 @@ Generate the project task list following this structure exactly:
   - [ ] 4.2 Set up database connection and ORM/query layer with performance optimization
   - [ ] 4.3 Implement data access patterns and repositories following DRY principles
   - [ ] 4.4 Create database utilities and helpers with security measures
-  - [ ] 4.5 Run quality validation: linting, security scan, performance test
+  - [ ] 4.5 Run quality validation: linting, security scan, performance test, development standards checklist
 - [ ] 5.0 Authentication & Authorization (ONLY if the project requires user management)
   - [ ] 5.1 Implement secure user authentication system with vulnerability prevention
   - [ ] 5.2 Set up user registration and login flows with input validation
   - [ ] 5.3 Configure session/token management with security best practices
   - [ ] 5.4 Implement role-based access control with proper authorization checks
-  - [ ] 5.5 Run quality validation: linting, security scan, performance test
+  - [ ] 5.5 Run quality validation: linting, security scan, performance test, development standards checklist
 - [ ] 6.0 Core Application Framework
   - [ ] 6.1 Set up routing and navigation with SEO-friendly URLs
   - [ ] 6.2 Implement request validation and comprehensive error handling
   - [ ] 6.3 Configure state management (Redux, Vuex, etc.) following clean architecture
   - [ ] 6.4 Set up API client and data fetching patterns with error handling
-  - [ ] 6.5 Run quality validation: linting, security scan, performance test
+  - [ ] 6.5 Run quality validation: linting, security scan, performance test, development standards checklist
 
 ### Phase 3: MVP Feature Development
 - [ ] 7.0 [Core Feature 1 from PSD]
   - [ ] 7.1 [Sub-task for Feature 1 with SEO considerations]
   - [ ] 7.2 [Sub-task for Feature 1 with security validation]
-  - [ ] 7.3 Run quality validation: linting, security scan, performance test, accessibility check
+  - [ ] 7.3 Run quality validation: linting, security scan, performance test, accessibility check, development standards checklist
 - [ ] 8.0 [Core Feature 2 from PSD]
   - [ ] 8.1 [Sub-task for Feature 2 following DRY principles]
   - [ ] 8.2 [Sub-task for Feature 2 with performance optimization]
-  - [ ] 8.3 Run quality validation: linting, security scan, performance test, accessibility check
+  - [ ] 8.3 Run quality validation: linting, security scan, performance test, accessibility check, development standards checklist
 - [ ] 9.0 User Interface Foundation
   - [ ] 9.1 Implement responsive layout and navigation with accessibility
   - [ ] 9.2 Create reusable UI component library following DRY principles
   - [ ] 9.3 Set up styling system (CSS-in-JS, SCSS, etc.) with performance optimization
   - [ ] 9.4 Implement accessibility features and WCAG compliance
-  - [ ] 9.5 Run quality validation: linting, security scan, performance test, accessibility check
+  - [ ] 9.5 Run quality validation: linting, security scan, performance test, accessibility check, development standards checklist
 - [ ] 10.0 SEO Foundation
   - [ ] 10.1 Implement meta tags and structured data
   - [ ] 10.2 Set up URL structure and routing for SEO
   - [ ] 10.3 Configure sitemap generation and robots.txt
   - [ ] 10.4 Optimize page loading speeds and Core Web Vitals
-  - [ ] 10.5 Run quality validation: SEO audit, performance test, accessibility check
+  - [ ] 10.5 Run quality validation: SEO audit, performance test, accessibility check, development standards checklist
 
 ### Phase 4: Advanced Features & Integration
 - [ ] 11.0 [Advanced Feature 1 from PSD]
   - [ ] 11.1 [Sub-task for Advanced Feature 1 with clean code principles]
-  - [ ] 11.2 Run quality validation: linting, security scan, performance test
+  - [ ] 11.2 Run quality validation: linting, security scan, performance test, development standards checklist
 - [ ] 12.0 Third-party Integrations
   - [ ] 12.1 Implement external API integrations with error handling
   - [ ] 12.2 Set up payment processing (if applicable) with security measures
   - [ ] 12.3 Configure email/notification services with validation
-  - [ ] 12.4 Run quality validation: linting, security scan, integration test
+  - [ ] 12.4 Run quality validation: linting, security scan, integration test, development standards checklist
 - [ ] 13.0 Advanced UI/UX Features
   - [ ] 13.1 Implement advanced interactions and animations with performance optimization
   - [ ] 13.2 Add progressive web app features (if applicable)
   - [ ] 13.3 Optimize user experience and workflows
-  - [ ] 13.4 Run quality validation: linting, performance test, accessibility check
+  - [ ] 13.4 Run quality validation: linting, performance test, accessibility check, development standards checklist
 
 ### Phase 5: Testing & Quality Assurance
 - [ ] 14.0 Comprehensive Testing
@@ -242,7 +243,7 @@ Target the task list for **software developers** who will implement the complete
 - **IMPORTANT: Include database tasks (4.0) ONLY if the PSD indicates data storage/persistence requirements**
 - **IMPORTANT: Include authentication tasks (5.0) ONLY if the PSD indicates user management requirements**
 - **IMPORTANT: Include PWA tasks (3.4, 13.2) ONLY if the PSD specifies PWA requirements**
-- **CRITICAL: Always include project structure documentation tasks (1.6, 2.8, 3.6) to prevent directory confusion and file duplication**
+- **CRITICAL: Always include project structure documentation tasks (1.6, 2.9, 3.7) to prevent directory confusion and file duplication**
 - Match testing, security, and SEO tasks to the quality standards outlined in the PSD
 - Emphasize DRY principles and clean code practices throughout all phases
 - Ensure cross-platform considerations are addressed based on PSD device/browser requirements

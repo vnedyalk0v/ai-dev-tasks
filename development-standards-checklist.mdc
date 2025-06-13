@@ -1,0 +1,215 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Development Standards Checklist
+
+## Purpose
+
+This checklist prevents common AI development mistakes by enforcing consistent standards throughout development. Use this during every major task to ensure quality and consistency.
+
+## Critical AI Mistake Prevention
+
+### 1. Naming Convention Consistency ⚠️ **VERY COMMON MISTAKE**
+**Problem:** AI switches between camelCase, snake_case, kebab-case within the same project
+
+**Prevention Rules:**
+- [ ] **Establish naming convention** in project-structure.md during Phase 1
+- [ ] **Variables & Functions:** Use consistent case (camelCase for JS, snake_case for Python, etc.)
+- [ ] **File Names:** Follow technology convention (kebab-case for CSS/HTML, camelCase for JS components)
+- [ ] **Database Fields:** Use consistent case throughout schema
+- [ ] **API Endpoints:** Use consistent pattern (/api/users vs /api/user-profiles)
+- [ ] **CSS Classes:** Use consistent methodology (BEM, camelCase, etc.)
+
+**Validation:** Before creating any new identifier, check existing code for patterns
+
+### 2. Incomplete Error Handling ⚠️ **CRITICAL ISSUE**
+**Problem:** AI implements happy path but forgets edge cases and error scenarios
+
+**Prevention Rules:**
+- [ ] **Every API call** must have try-catch or error handling
+- [ ] **Every form submission** must handle validation errors
+- [ ] **Every file operation** must handle file not found, permissions, etc.
+- [ ] **Every database operation** must handle connection errors, constraint violations
+- [ ] **User-facing error messages** must be informative but not expose system details
+- [ ] **Error logging** must be implemented for debugging
+
+**Validation:** Every function with external dependencies must have error handling
+
+### 3. Missing Input Validation ⚠️ **SECURITY RISK**
+**Problem:** AI forgets input validation, especially on forms and API endpoints
+
+**Prevention Rules:**
+- [ ] **Client-side validation** for immediate user feedback
+- [ ] **Server-side validation** for security (never trust client)
+- [ ] **Type checking** for all function parameters
+- [ ] **Range validation** for numbers, dates, lengths
+- [ ] **Format validation** for emails, URLs, phone numbers
+- [ ] **Sanitization** for HTML content and database inputs
+- [ ] **Rate limiting** for API endpoints
+
+**Validation:** Every user input point must have comprehensive validation
+
+### 4. Hardcoded Values ⚠️ **DEPLOYMENT KILLER**
+**Problem:** AI hardcodes URLs, API keys, configuration values instead of using environment variables
+
+**Prevention Rules:**
+- [ ] **API URLs** must use environment variables
+- [ ] **Database connections** must use environment variables
+- [ ] **API keys** must never be in source code
+- [ ] **Feature flags** should be configurable
+- [ ] **Port numbers** should be configurable
+- [ ] **File paths** should be relative or configurable
+- [ ] **Create .env.example** with all required variables
+
+**Validation:** No configuration values should be hardcoded in source files
+
+### 5. Security Vulnerabilities ⚠️ **CRITICAL RISK**
+**Problem:** AI misses basic security practices
+
+**Prevention Rules:**
+- [ ] **SQL injection prevention** - use parameterized queries
+- [ ] **XSS protection** - sanitize user content before display
+- [ ] **CSRF protection** - implement CSRF tokens for state-changing operations
+- [ ] **Authentication** - implement proper session/token management
+- [ ] **Authorization** - check permissions before allowing actions
+- [ ] **HTTPS enforcement** - redirect HTTP to HTTPS
+- [ ] **Password hashing** - never store plain text passwords
+- [ ] **Dependency scanning** - check for vulnerable packages
+
+**Validation:** Security checklist must be completed for every feature
+
+### 6. Import/Export Inconsistencies ⚠️ **MAINTAINABILITY ISSUE**
+**Problem:** AI mixes default and named exports, or import styles inconsistently
+
+**Prevention Rules:**
+- [ ] **Choose export pattern** - default vs named exports (document in project-structure.md)
+- [ ] **Import organization** - external libs first, then internal modules
+- [ ] **Consistent import syntax** - use same destructuring patterns
+- [ ] **Relative path consistency** - use same depth patterns
+- [ ] **Barrel exports** - use index.js files consistently
+- [ ] **Dynamic imports** - use same pattern for code splitting
+
+**Validation:** Import statements should follow established patterns
+
+### 7. Configuration Drift ⚠️ **DEPLOYMENT ISSUE**
+**Problem:** AI changes configuration files inconsistently across similar setups
+
+**Prevention Rules:**
+- [ ] **Environment parity** - dev, staging, prod configs should be similar structure
+- [ ] **Configuration validation** - validate required config on startup
+- [ ] **Default values** - provide sensible defaults for optional config
+- [ ] **Configuration documentation** - document all config options
+- [ ] **Schema validation** - validate configuration format
+- [ ] **Secrets management** - separate secrets from regular config
+
+**Validation:** Configuration changes must be applied consistently across environments
+
+### 8. Missing Accessibility ⚠️ **INCLUSION ISSUE**
+**Problem:** AI forgets ARIA labels, alt text, keyboard navigation
+
+**Prevention Rules:**
+- [ ] **Alt text** for all images
+- [ ] **ARIA labels** for interactive elements
+- [ ] **Keyboard navigation** support for all interactive elements
+- [ ] **Focus indicators** visible and appropriate
+- [ ] **Color contrast** meets WCAG standards
+- [ ] **Screen reader** compatibility testing
+- [ ] **Semantic HTML** elements used correctly
+
+**Validation:** Accessibility checklist must be completed for every UI component
+
+### 9. Performance Anti-patterns ⚠️ **USER EXPERIENCE KILLER**
+**Problem:** AI misses performance optimizations
+
+**Prevention Rules:**
+- [ ] **Image optimization** - use appropriate formats and sizes
+- [ ] **Lazy loading** for images and components
+- [ ] **Bundle size monitoring** - avoid large dependencies
+- [ ] **Caching strategies** for API calls and static assets
+- [ ] **Database query optimization** - avoid N+1 queries
+- [ ] **Memory leak prevention** - clean up event listeners and subscriptions
+- [ ] **Code splitting** for large applications
+
+**Validation:** Performance budget must not be exceeded
+
+### 10. Testing Gaps ⚠️ **RELIABILITY ISSUE**
+**Problem:** AI writes incomplete tests or forgets edge cases
+
+**Prevention Rules:**
+- [ ] **Happy path testing** for all features
+- [ ] **Edge case testing** for boundary conditions
+- [ ] **Error case testing** for all error scenarios
+- [ ] **Integration testing** for API endpoints
+- [ ] **Accessibility testing** for UI components
+- [ ] **Performance testing** for critical paths
+- [ ] **Security testing** for authentication/authorization
+
+**Validation:** Test coverage must meet project standards
+
+## Implementation Instructions
+
+### During Each Major Task:
+1. **Before Implementation:**
+   - Review this checklist for relevant standards
+   - Plan implementation to meet all applicable rules
+   
+2. **During Implementation:**
+   - Check standards as you code
+   - Validate naming conventions against existing code
+   - Implement error handling immediately, not as afterthought
+   
+3. **After Implementation:**
+   - Run through complete checklist
+   - Fix any violations before marking task complete
+   - Update project documentation with any new standards
+
+### Quality Validation Integration:
+Add these checks to existing quality validation steps:
+
+**Code Quality Validation:**
+- [ ] Naming conventions are consistent
+- [ ] No hardcoded values present
+- [ ] Import/export patterns are consistent
+
+**Security Validation:**
+- [ ] All inputs are validated
+- [ ] Error handling is complete
+- [ ] Security checklist is satisfied
+
+**Performance Validation:**
+- [ ] No performance anti-patterns detected
+- [ ] Bundle size is within limits
+- [ ] Images are optimized
+
+**Accessibility Validation:**
+- [ ] WCAG compliance is met
+- [ ] Keyboard navigation works
+- [ ] Screen reader compatibility confirmed
+
+## Emergency Standards Recovery
+
+### When Standards Are Violated:
+1. **Stop development immediately**
+2. **Audit entire codebase** for similar violations
+3. **Create remediation plan** to fix all instances
+4. **Update standards documentation** to prevent recurrence
+5. **Resume development** only after standards are restored
+
+### Common Remediation Tasks:
+- **Naming consistency:** Rename all identifiers to follow single convention
+- **Error handling:** Add try-catch blocks to all external operations
+- **Hardcoded values:** Move all configuration to environment variables
+- **Security fixes:** Implement missing validation and protection measures
+
+## Integration Points
+
+This checklist integrates with:
+- **Phase 1 setup** - Establish standards and conventions
+- **Every major task** - Validate standards compliance
+- **Quality validation** - Include standards checking
+- **Code review** - Use as review criteria
+- **Testing** - Include standards testing
+
+Remember: **Consistent standards are more important than perfect standards. Pick conventions and stick to them throughout the project.**

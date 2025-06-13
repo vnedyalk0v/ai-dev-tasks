@@ -95,6 +95,7 @@ You'll see steady progress through:
 - **`generate-project-tasks.mdc`**: Takes a PSD and creates a complete, phase-based development roadmap with quality checkpoints and best practices
 - **`process-project-tasks.mdc`**: Provides systematic development execution guidelines with code quality management, security practices, and performance optimization
 - **`project-structure-guide.mdc`**: AI instruction for preventing directory and file management mistakes
+- **`development-standards-checklist.mdc`**: AI instruction for preventing common development mistakes and maintaining code quality
 
 ## 🌟 Benefits of the Development-Focused Approach
 
@@ -147,6 +148,8 @@ Here's the application I want to build: [Describe your application/project]
 - **Test Cross-Platform:** Verify functionality across all target devices and browsers
 - **Maintain Project Structure:** Use project-structure.md to prevent directory confusion and file duplication
 - **Validate Working Directory:** Always confirm you're working in the correct project location before creating files
+- **Enforce Development Standards:** Use the development standards checklist to prevent common AI mistakes
+- **Establish Conventions Early:** Set naming conventions, error handling patterns, and coding standards in Phase 1
 
 ## 📊 Project Types Supported
 
@@ -187,6 +190,7 @@ This framework provides structured guidance for AI assistants to build entire ap
 - `generate-project-tasks.mdc` - AI instruction for generating development roadmaps
 - `process-project-tasks.mdc` - AI instruction for systematic task execution
 - `project-structure-guide.mdc` - AI instruction for preventing directory and file management mistakes
+- `development-standards-checklist.mdc` - AI instruction for preventing common development mistakes and maintaining code quality
 - `README.md` - This documentation file
 
 ## Framework Components
@@ -246,6 +250,21 @@ Prevent common AI development mistakes with:
 - **Structure Documentation:** Living project-structure.md file updated continuously
 - **Emergency Recovery:** Procedures for fixing structure problems when they occur
 
+### 6. Development Standards Checklist (`development-standards-checklist.mdc`)
+
+Prevent the 10 most common AI development mistakes:
+
+- **Naming Convention Consistency:** Prevents mixing camelCase, snake_case, kebab-case in same project
+- **Complete Error Handling:** Ensures every external operation has proper error management
+- **Input Validation:** Prevents security vulnerabilities through comprehensive validation
+- **Configuration Management:** Eliminates hardcoded values and ensures proper environment setup
+- **Security Best Practices:** Prevents SQL injection, XSS, CSRF, and other vulnerabilities
+- **Import/Export Consistency:** Maintains consistent module patterns throughout codebase
+- **Performance Optimization:** Prevents common performance anti-patterns
+- **Accessibility Compliance:** Ensures WCAG standards are met consistently
+- **Testing Completeness:** Prevents gaps in test coverage and edge case handling
+- **Standards Recovery:** Emergency procedures when standards are violated
+
 ## Key Features
 
 - **Technology Decision Guidance:** Systematic approach to selecting optimal tech stacks
@@ -258,3 +277,4 @@ Prevent common AI development mistakes with:
 - **Clean Code Enforcement:** DRY principles and maintainable code practices
 - **Quality Validation:** Comprehensive testing and validation after each major task
 - **Project Structure Management:** Prevents directory confusion and file duplication common in AI development
+- **Development Standards Enforcement:** Prevents the 10 most common AI coding mistakes through systematic validation
