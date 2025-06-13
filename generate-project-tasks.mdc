@@ -7,7 +7,7 @@ alwaysApply: false
 
 ## Goal
 
-To guide an AI assistant in creating a comprehensive, phase-based task list in Markdown format based on an existing Project Specification Document (PSD). The task list should guide development of consistent, secure, performant, and SEO-optimized applications through systematic development phases, emphasizing clean code principles, DRY implementation, and zero-vulnerability development practices.
+Create a comprehensive, phase-based task list in Markdown format based on an existing Project Specification Document (PSD). Guide development of consistent, secure, performant, and SEO-optimized applications through systematic development phases, emphasizing clean code principles, DRY implementation, and zero-vulnerability development practices.
 
 ## Output
 
@@ -17,8 +17,8 @@ To guide an AI assistant in creating a comprehensive, phase-based task list in M
 
 ## Process
 
-1.  **Receive PSD Reference:** The user points the AI to a specific Project Specification Document file
-2.  **Analyze PSD:** The AI reads and analyzes all sections of the PSD, paying special attention to technical architecture, feature requirements, quality standards, SEO requirements, and development phases
+1.  **Receive PSD Reference:** The user points you to a specific Project Specification Document file
+2.  **Analyze PSD:** Read and analyze all sections of the PSD, paying special attention to technical architecture, feature requirements, quality standards, SEO requirements, and development phases
 3.  **Phase 1: Generate Development Phases:** Based on the PSD analysis, create the file and generate the main development phases. Present these phases to the user in the specified format. Inform the user: "I have generated the development phases based on the PSD. Ready to generate the detailed tasks for each phase? Respond with 'Go' to proceed."
 4.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go"
 5.  **Phase 2: Generate Detailed Tasks:** Once confirmed, break down each development phase into major tasks, and each major task into actionable sub-tasks
@@ -28,7 +28,7 @@ To guide an AI assistant in creating a comprehensive, phase-based task list in M
 
 ## Output Format
 
-The generated project task list _must_ follow this structure:
+Generate the project task list following this structure exactly:
 
 ```markdown
 # [Project Name] - Development Tasks
@@ -71,7 +71,7 @@ The generated project task list _must_ follow this structure:
 ### Notes
 
 - File structure will vary based on chosen technology stack
-- Test files should follow the naming convention of the chosen testing framework
+- Use test files that follow the naming convention of the chosen testing framework
 - Follow framework-specific best practices for file organization
 - Include proper TypeScript configuration if using TypeScript
 - Ensure proper linting and formatting setup for code consistency
@@ -183,17 +183,17 @@ The generated project task list _must_ follow this structure:
 
 ## Interaction Model
 
-The process explicitly requires a pause after generating development phases to get user confirmation ("Go") before proceeding to generate the detailed tasks. This ensures the high-level development plan aligns with user expectations and emphasizes quality, security, and performance standards before diving into implementation details.
+Pause after generating development phases to get user confirmation ("Go") before proceeding to generate detailed tasks. This ensures the high-level development plan aligns with user expectations and emphasizes quality, security, and performance standards before diving into implementation details.
 
 ## Target Audience
 
-Assume the primary readers are **software developers** who will implement the complete application development lifecycle, focusing on code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities.
+Target the task list for **software developers** who will implement the complete application development lifecycle, focusing on code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities.
 
 ## Customization Notes
 
-- Tasks should be adapted based on the specific technology stack mentioned in the PSD
-- Feature-specific tasks (phases 3-4) should be generated based on the actual features defined in the PSD
-- Testing, security, and SEO tasks should match the quality standards outlined in the PSD
+- Adapt tasks based on the specific technology stack mentioned in the PSD
+- Generate feature-specific tasks (phases 3-4) based on the actual features defined in the PSD
+- Match testing, security, and SEO tasks to the quality standards outlined in the PSD
 - Emphasize DRY principles and clean code practices throughout all phases
 - Remove or add phases based on project complexity and requirements
 - Ensure all tasks include security considerations and vulnerability prevention

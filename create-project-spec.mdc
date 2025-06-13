@@ -7,18 +7,18 @@ alwaysApply: false
 
 ## Goal
 
-To guide an AI assistant in creating a comprehensive Project Specification Document (PSD) in Markdown format for developing high-quality applications. The PSD should ensure consistency, security, performance, SEO optimization, and maintainability across all development projects, emphasizing clean code, DRY principles, and zero-vulnerability development practices.
+Create a comprehensive Project Specification Document (PSD) in Markdown format for developing high-quality applications. Ensure consistency, security, performance, SEO optimization, and maintainability across all development projects, emphasizing clean code, DRY principles, and zero-vulnerability development practices.
 
 ## Process
 
 1.  **Receive Initial Prompt:** The user provides a brief description or request for a new application project.
-2.  **Ask Clarifying Questions:** Before writing the PSD, the AI *must* ask clarifying questions to gather sufficient detail about the project scope, technical requirements, and quality standards.
+2.  **Ask Clarifying Questions:** Before writing the PSD, you *must* ask clarifying questions to gather sufficient detail about the project scope, technical requirements, and quality standards.
 3.  **Generate PSD:** Based on the initial prompt and the user's answers, generate a PSD using the structure outlined below.
 4.  **Save PSD:** Save the generated document as `project-spec-[project-name].md` inside the `/project/` directory.
 
 ## Clarifying Questions (Examples)
 
-The AI should adapt its questions based on the prompt, but here are key areas to explore:
+Adapt your questions based on the prompt, but here are key areas to explore:
 
 ### Project Scope & Vision
 *   **Project Vision:** "What is the overall vision and main purpose of this application?"
@@ -54,7 +54,7 @@ The AI should adapt its questions based on the prompt, but here are key areas to
 
 ## PSD Structure
 
-The generated PSD should include the following sections:
+Generate the PSD with the following sections:
 
 ### 1. Project Overview
 *   **Project Name & Description:** Clear, concise application summary
@@ -86,7 +86,7 @@ The generated PSD should include the following sections:
 *   **Performance Requirements:** Response times, load handling, optimization targets, Core Web Vitals
 *   **Security Requirements:** Data protection, authentication standards, zero-vulnerability mandate
 *   **SEO Requirements:** Meta tags, structured data, page speed, mobile-first indexing, content optimization
-*   **Code Quality Standards:** Clean code principles, DRY implementation, coding conventions, documentation requirements, testing standards
+*   **Code Quality Standards:** clean code principles, DRY implementation, coding conventions, documentation requirements, testing standards
 *   **Browser/Device Compatibility:** Support requirements and responsive design needs
 *   **Accessibility Standards:** WCAG compliance levels and accessibility features
 
@@ -99,7 +99,7 @@ The generated PSD should include the following sections:
 *   **Phase 6: Performance & Security Optimization:** Performance tuning, security hardening, SEO enhancement
 
 ### 7. Development Standards
-*   **Clean Code Principles:** SOLID principles, readable code, meaningful naming, single responsibility
+*   **clean code principles:** SOLID principles, readable code, meaningful naming, single responsibility
 *   **DRY Implementation:** Don't Repeat Yourself - modular, reusable components and utilities
 *   **Coding Conventions:** Style guides, naming conventions, file organization
 *   **Testing Strategy:** Unit, integration, and end-to-end testing approaches
@@ -123,7 +123,7 @@ The generated PSD should include the following sections:
 
 ## Target Audience
 
-Assume the primary readers are **software developers** who will implement the application. The document should provide sufficient technical detail for consistent, secure, performant, and SEO-optimized development with zero tolerance for vulnerabilities.
+Target this for **software developers** who will implement the application. Provide sufficient technical detail for consistent, secure, performant, and SEO-optimized development with zero tolerance for vulnerabilities.
 
 ## Output
 
@@ -134,7 +134,7 @@ Assume the primary readers are **software developers** who will implement the ap
 ## Final Instructions
 
 1. Do NOT start implementing the project
-2. Make sure to ask comprehensive clarifying questions covering all major development areas
+2. Ask comprehensive clarifying questions covering all major development areas
 3. Take the user's answers and create a thorough, development-focused PSD
 4. Focus on ensuring consistency, security, performance, SEO, and clean code in application development
 5. Emphasize zero-vulnerability development and DRY principles throughout

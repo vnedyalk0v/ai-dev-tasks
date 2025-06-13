@@ -5,17 +5,17 @@ alwaysApply: false
 ---
 # Development Task List Management
 
-Guidelines for managing development task lists in markdown files to track progress on building consistent, secure, performant, and SEO-optimized applications through systematic development phases, emphasizing clean code principles, DRY implementation, and zero-vulnerability development practices.
+Follow these guidelines for managing development task lists in markdown files to track progress on building consistent, secure, performant, and SEO-optimized applications through systematic development phases, emphasizing clean code principles, DRY implementation, and zero-vulnerability development practices.
 
 ## Development Task Implementation Strategy
 
 ### Phase-Based Development Execution
-- **Complete phases sequentially:** Generally, phases should be completed in order (Setup → Architecture → MVP Features → etc.) due to dependencies
-- **Within-phase flexibility:** Tasks within a phase can often be worked on in parallel or different orders, depending on dependencies
+- **Complete phases sequentially:** Generally, complete phases in order (Setup → Architecture → MVP Features → etc.) due to dependencies
+- **Within-phase flexibility:** Work on tasks within a phase in parallel or different orders, depending on dependencies
 - **Quality-first approach:** Emphasize code quality, security, performance, and SEO optimization at each phase
-- **Zero-vulnerability mandate:** No vulnerabilities are acceptable - implement security checks at every step
+- **zero-vulnerability mandate:** Accept no vulnerabilities - implement security checks at every step
 - **DRY implementation:** Consistently apply Don't Repeat Yourself principles throughout development
-- **Clean code focus:** Prioritize readable, maintainable, and SOLID principles in all implementations
+- **clean code focus:** Prioritize readable, maintainable, and SOLID principles in all implementations
 - **Dependency awareness:** Before starting any task, verify that prerequisite tasks and their quality checks are completed
 
 ### Task Completion Protocol
@@ -35,7 +35,7 @@ Guidelines for managing development task lists in markdown files to track progre
 ### Code Organization
 1. **Track all created files:** Maintain the "Project Structure" section with every source file, configuration file, test file, and SEO file created
 2. **Update structure as development progresses:** Add new directories, components, utilities, and modules as they're created
-3. **Include file descriptions:** Each file should have a brief description of its purpose, functionality, and security considerations
+3. **Include file descriptions:** Give each file a brief description of its purpose, functionality, and security considerations
 4. **Organize by architectural patterns:** Keep files grouped according to chosen architectural patterns (MVC, component-based, etc.) following clean code principles
 5. **DRY organization:** Ensure no duplicate functionality across files and components
 
@@ -49,7 +49,7 @@ Guidelines for managing development task lists in markdown files to track progre
 ## AI Instructions for Development Management
 
 ### Pre-Task Development Analysis
-Before starting any development task, the AI must:
+Before starting any development task, you must:
 1. **Check dependencies:** Verify that prerequisite development tasks are completed and tested
 2. **Assess code impact:** Understand how the current task affects existing code, architecture, security, and performance
 3. **Identify files to modify:** List all files that will be created, modified, or affected
@@ -58,7 +58,7 @@ Before starting any development task, the AI must:
 6. **SEO considerations:** Evaluate SEO impact for user-facing features
 
 ### During Development Task Execution
-While working on development tasks, the AI must:
+While working on development tasks, you must:
 1. **Follow coding standards:** Adhere to the project's established coding conventions and clean code principles
 2. **Write clean, maintainable code:** Focus on code readability, modularity, reusability, and SOLID principles
 3. **Implement DRY principles:** Avoid code duplication and create reusable components and utilities
@@ -67,10 +67,10 @@ While working on development tasks, the AI must:
 6. **SEO optimization:** Implement SEO best practices for user-facing features, including meta tags, structured data, and page speed optimization
 7. **Update progressively:** Mark sub-tasks as complete immediately after implementation and basic testing
 8. **Handle development blockers:** If blocked by technical issues, clearly communicate the problem and research solutions
-9. **Zero-vulnerability validation:** Validate each implementation for security vulnerabilities before completion
+9. **zero-vulnerability validation:** Validate each implementation for security vulnerabilities before completion
 
 ### Post-Development Task Activities
-After completing each major development task, the AI must:
+After completing each major development task, you must:
 1. **Update task list:** Mark the major task as complete and update the project structure
 2. **Comprehensive code review:** Perform self-review of implemented code for quality, security, performance, DRY compliance, and clean code principles
 3. **Security validation:** Verify no vulnerabilities have been introduced and security best practices are followed
@@ -94,7 +94,7 @@ When transitioning between development phases:
 ## Development Quality Management
 
 ### Code Quality Standards
-- **Clean Code Principles:** Follow SOLID principles, meaningful naming, single responsibility, readable code structure
+- **clean code principles:** Follow SOLID principles, meaningful naming, single responsibility, readable code structure
 - **DRY Implementation:** Eliminate code duplication through modular, reusable components and utilities
 - **Consistency:** Ensure consistent coding style, naming conventions, and file organization
 - **Modularity:** Write modular, reusable code that follows clean architecture patterns
@@ -103,7 +103,7 @@ When transitioning between development phases:
 - **Performance:** Consider performance implications in all development decisions and implementations
 
 ### Security Development Practices
-- **Zero-Vulnerability Mandate:** No security vulnerabilities are acceptable - implement comprehensive security measures
+- **zero-vulnerability mandate:** No security vulnerabilities are acceptable - implement comprehensive security measures
 - **Input validation:** Implement rigorous input validation and sanitization for all user inputs
 - **Authentication/Authorization:** Ensure proper access controls, permission checks, and secure authentication mechanisms
 - **Data protection:** Implement encryption, secure data handling practices, and privacy protection
@@ -162,4 +162,4 @@ When transitioning between development phases:
 - **Alternative approaches:** When multiple technical solutions are viable, present options with pros/cons including security and performance implications
 - **Quality standards:** Discuss adherence to clean code principles, DRY implementation, and security best practices
 
-This development-focused workflow ensures systematic progress through application development while maintaining the highest standards for code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities throughout the entire development lifecycle.
+Follow this development-focused workflow to ensure systematic progress through application development while maintaining the highest standards for code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities throughout the entire development lifecycle.
