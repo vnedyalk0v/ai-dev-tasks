@@ -5,126 +5,161 @@ alwaysApply: false
 ---
 # Development Task List Management
 
-Guidelines for managing development task lists in markdown files to track progress on building consistent, secure, and performant applications through systematic development phases.
+Guidelines for managing development task lists in markdown files to track progress on building consistent, secure, performant, and SEO-optimized applications through systematic development phases, emphasizing clean code principles, DRY implementation, and zero-vulnerability development practices.
 
 ## Development Task Implementation Strategy
 
 ### Phase-Based Development Execution
 - **Complete phases sequentially:** Generally, phases should be completed in order (Setup → Architecture → MVP Features → etc.) due to dependencies
 - **Within-phase flexibility:** Tasks within a phase can often be worked on in parallel or different orders, depending on dependencies
-- **Quality-first approach:** Emphasize code quality, security, and performance at each phase
+- **Quality-first approach:** Emphasize code quality, security, performance, and SEO optimization at each phase
+- **Zero-vulnerability mandate:** No vulnerabilities are acceptable - implement security checks at every step
+- **DRY implementation:** Consistently apply Don't Repeat Yourself principles throughout development
+- **Clean code focus:** Prioritize readable, maintainable, and SOLID principles in all implementations
 - **Dependency awareness:** Before starting any task, verify that prerequisite tasks and their quality checks are completed
 
 ### Task Completion Protocol
 - **Sub-task level:** When you finish a **sub-task**, immediately mark it as completed by changing `[ ]` to `[x]`
 - **Major task level:** If **all** subtasks underneath a major task are now `[x]`, also mark the **major task** as completed
 - **Phase level:** When **all** major tasks in a phase are completed, mark the phase as completed with a summary comment
-- **Quality checkpoint:** After completing each **major task**, perform quality review before getting user approval to proceed
+- **Quality checkpoint:** After completing each **major task**, perform comprehensive quality review covering security, performance, SEO, and code quality before getting user approval to proceed
 
 ### Parallel Development Management
 - **Identify parallel opportunities:** Look for tasks that can be worked on simultaneously (e.g., frontend components, backend APIs, database models)
 - **Communicate dependencies:** Clearly state when tasks are blocked waiting for other development tasks to complete
-- **Code organization:** Suggest appropriate file organization and modular development approaches
-- **Testing parallel development:** Ensure tests are written alongside feature development
+- **Code organization:** Suggest appropriate file organization and modular development approaches following DRY principles
+- **Testing parallel development:** Ensure tests (including security and performance tests) are written alongside feature development
 
 ## Development Structure Maintenance
 
 ### Code Organization
-1. **Track all created files:** Maintain the "Project Structure" section with every source file, configuration file, and test file created
+1. **Track all created files:** Maintain the "Project Structure" section with every source file, configuration file, test file, and SEO file created
 2. **Update structure as development progresses:** Add new directories, components, utilities, and modules as they're created
-3. **Include file descriptions:** Each file should have a brief description of its purpose and functionality
-4. **Organize by architectural patterns:** Keep files grouped according to chosen architectural patterns (MVC, component-based, etc.)
+3. **Include file descriptions:** Each file should have a brief description of its purpose, functionality, and security considerations
+4. **Organize by architectural patterns:** Keep files grouped according to chosen architectural patterns (MVC, component-based, etc.) following clean code principles
+5. **DRY organization:** Ensure no duplicate functionality across files and components
 
 ### Development Documentation Updates
-1. **Code documentation:** Keep inline code comments and documentation current
-2. **API documentation:** Update API documentation as endpoints and interfaces are implemented
-3. **Architecture decisions:** Document significant technical and design decisions
-4. **Setup instructions:** Keep development environment setup instructions current
+1. **Code documentation:** Keep inline code comments and documentation current, emphasizing security and performance considerations
+2. **API documentation:** Update API documentation as endpoints and interfaces are implemented, including security headers and rate limiting
+3. **Architecture decisions:** Document significant technical and design decisions, including security and performance trade-offs
+4. **Setup instructions:** Keep development environment setup instructions current, including security tools and SEO configurations
+5. **SEO documentation:** Document SEO strategies, meta tag implementations, and structured data approaches
 
 ## AI Instructions for Development Management
 
 ### Pre-Task Development Analysis
 Before starting any development task, the AI must:
 1. **Check dependencies:** Verify that prerequisite development tasks are completed and tested
-2. **Assess code impact:** Understand how the current task affects existing code and architecture
+2. **Assess code impact:** Understand how the current task affects existing code, architecture, security, and performance
 3. **Identify files to modify:** List all files that will be created, modified, or affected
-4. **Plan implementation approach:** Outline the coding approach and architectural considerations
+4. **Plan implementation approach:** Outline the coding approach emphasizing clean code, DRY principles, security, and performance considerations
+5. **Security review:** Assess potential security implications and vulnerability risks
+6. **SEO considerations:** Evaluate SEO impact for user-facing features
 
 ### During Development Task Execution
 While working on development tasks, the AI must:
-1. **Follow coding standards:** Adhere to the project's established coding conventions and best practices
-2. **Write clean, maintainable code:** Focus on code readability, modularity, and reusability
-3. **Implement security best practices:** Include input validation, authentication checks, and secure coding practices
-4. **Performance considerations:** Write efficient code with consideration for performance implications
-5. **Update progressively:** Mark sub-tasks as complete immediately after implementation and basic testing
-6. **Handle development blockers:** If blocked by technical issues, clearly communicate the problem and research solutions
+1. **Follow coding standards:** Adhere to the project's established coding conventions and clean code principles
+2. **Write clean, maintainable code:** Focus on code readability, modularity, reusability, and SOLID principles
+3. **Implement DRY principles:** Avoid code duplication and create reusable components and utilities
+4. **Implement security best practices:** Include comprehensive input validation, authentication checks, secure coding practices, and vulnerability prevention
+5. **Performance considerations:** Write efficient code with consideration for performance implications and optimization
+6. **SEO optimization:** Implement SEO best practices for user-facing features, including meta tags, structured data, and page speed optimization
+7. **Update progressively:** Mark sub-tasks as complete immediately after implementation and basic testing
+8. **Handle development blockers:** If blocked by technical issues, clearly communicate the problem and research solutions
+9. **Zero-vulnerability validation:** Validate each implementation for security vulnerabilities before completion
 
 ### Post-Development Task Activities
 After completing each major development task, the AI must:
 1. **Update task list:** Mark the major task as complete and update the project structure
-2. **Code review:** Perform self-review of implemented code for quality, security, and performance
-3. **Testing:** Run relevant tests and ensure new functionality works correctly
-4. **Documentation updates:** Update relevant code documentation and API documentation
-5. **Request approval:** Ask the user to review the implemented functionality before proceeding
-6. **Suggest next steps:** Recommend the next logical development task(s) based on dependencies and priority
+2. **Comprehensive code review:** Perform self-review of implemented code for quality, security, performance, DRY compliance, and clean code principles
+3. **Security validation:** Verify no vulnerabilities have been introduced and security best practices are followed
+4. **Performance testing:** Validate performance implications and optimize where necessary
+5. **SEO validation:** Ensure SEO best practices are implemented for user-facing features
+6. **Testing:** Run relevant tests (unit, integration, security) and ensure new functionality works correctly
+7. **Documentation updates:** Update relevant code documentation, API documentation, and SEO documentation
+8. **Request approval:** Ask the user to review the implemented functionality before proceeding
+9. **Suggest next steps:** Recommend the next logical development task(s) based on dependencies and priority
 
 ### Cross-Phase Development Considerations
 When transitioning between development phases:
-1. **Phase completion review:** Summarize development accomplishments and code quality metrics
-2. **Architecture validation:** Ensure the codebase maintains architectural integrity
-3. **Performance baseline:** Establish performance baselines and benchmarks where applicable
-4. **Security review:** Conduct security review of implemented features
-5. **Technical debt assessment:** Identify any technical debt accumulated and plan for resolution
+1. **Phase completion review:** Summarize development accomplishments, code quality metrics, security status, and performance benchmarks
+2. **Architecture validation:** Ensure the codebase maintains architectural integrity and clean code principles
+3. **Security audit:** Conduct comprehensive security review of implemented features and ensure zero vulnerabilities
+4. **Performance baseline:** Establish performance baselines and benchmarks where applicable
+5. **SEO audit:** Review SEO implementation and optimization opportunities
+6. **Technical debt assessment:** Identify any technical debt accumulated and plan for resolution
+7. **DRY compliance check:** Verify DRY principles are consistently applied across the codebase
 
 ## Development Quality Management
 
 ### Code Quality Standards
+- **Clean Code Principles:** Follow SOLID principles, meaningful naming, single responsibility, readable code structure
+- **DRY Implementation:** Eliminate code duplication through modular, reusable components and utilities
 - **Consistency:** Ensure consistent coding style, naming conventions, and file organization
-- **Modularity:** Write modular, reusable code that follows DRY principles
-- **Testing:** Implement comprehensive unit tests, integration tests, and end-to-end tests
-- **Documentation:** Maintain clear code comments and documentation
-- **Performance:** Consider performance implications in all development decisions
+- **Modularity:** Write modular, reusable code that follows clean architecture patterns
+- **Testing:** Implement comprehensive unit tests, integration tests, security tests, and end-to-end tests
+- **Documentation:** Maintain clear code comments, API documentation, and architectural documentation
+- **Performance:** Consider performance implications in all development decisions and implementations
 
 ### Security Development Practices
-- **Input validation:** Implement proper input validation and sanitization
-- **Authentication/Authorization:** Ensure proper access controls and permission checks
-- **Data protection:** Implement encryption and secure data handling practices
-- **Vulnerability prevention:** Follow OWASP guidelines and security best practices
-- **Security testing:** Include security testing in the development process
+- **Zero-Vulnerability Mandate:** No security vulnerabilities are acceptable - implement comprehensive security measures
+- **Input validation:** Implement rigorous input validation and sanitization for all user inputs
+- **Authentication/Authorization:** Ensure proper access controls, permission checks, and secure authentication mechanisms
+- **Data protection:** Implement encryption, secure data handling practices, and privacy protection
+- **Vulnerability prevention:** Follow OWASP guidelines, security best practices, and conduct regular security assessments
+- **Security testing:** Include comprehensive security testing in the development process
+- **Secure coding practices:** Follow secure coding guidelines and conduct code reviews with security focus
 
 ### Performance Development Practices
-- **Efficient algorithms:** Choose appropriate data structures and algorithms
-- **Database optimization:** Write efficient queries and implement proper indexing
-- **Frontend optimization:** Implement lazy loading, code splitting, and asset optimization
-- **Caching strategies:** Implement appropriate caching at various levels
-- **Performance monitoring:** Include performance measurement and monitoring code
+- **Efficient algorithms:** Choose appropriate data structures and algorithms for optimal performance
+- **Database optimization:** Write efficient queries, implement proper indexing, and optimize data access patterns
+- **Frontend optimization:** Implement lazy loading, code splitting, asset optimization, and Core Web Vitals optimization
+- **Caching strategies:** Implement appropriate caching at various levels (browser, CDN, application, database)
+- **Performance monitoring:** Include performance measurement, monitoring code, and optimization tracking
+- **Resource optimization:** Optimize images, fonts, and other assets for performance
+
+### SEO Development Practices
+- **Technical SEO:** Implement proper URL structure, meta tags, structured data, and sitemap generation
+- **Page Speed Optimization:** Optimize Core Web Vitals, loading speeds, and performance metrics
+- **Mobile-First Approach:** Ensure mobile responsiveness and mobile-first indexing compatibility
+- **Accessibility:** Implement WCAG compliance and accessibility best practices
+- **Content Optimization:** Structure content for search engines and implement semantic HTML
+- **Analytics Integration:** Implement tracking and analytics for SEO performance monitoring
 
 ## Error Handling and Development Recovery
 
 ### When Development Tasks Fail
 - **Debug systematically:** Use debugging tools and techniques to identify root causes
-- **Document the issue:** Clearly explain technical problems and attempted solutions
-- **Research solutions:** Investigate documentation, community resources, and best practices
-- **Propose alternatives:** Suggest alternative implementation approaches
-- **Update approach:** Modify the development approach based on learnings
+- **Security assessment:** Evaluate if failures introduce security risks or vulnerabilities
+- **Document the issue:** Clearly explain technical problems, attempted solutions, and security implications
+- **Research solutions:** Investigate documentation, community resources, and security-focused best practices
+- **Propose alternatives:** Suggest alternative implementation approaches that maintain security and performance standards
+- **Update approach:** Modify the development approach based on learnings while maintaining quality standards
 
 ### When Technical Decisions Change
-- **Assess impact:** Determine how changes affect existing code and future development
-- **Refactor systematically:** Plan and execute code refactoring to accommodate changes
-- **Update tests:** Modify tests to reflect changes in functionality or architecture
-- **Update documentation:** Ensure all documentation reflects the current technical decisions
+- **Assess impact:** Determine how changes affect existing code, security, performance, and SEO
+- **Refactor systematically:** Plan and execute code refactoring to accommodate changes while maintaining DRY principles
+- **Security validation:** Ensure changes don't introduce vulnerabilities or security risks
+- **Performance validation:** Verify changes don't negatively impact performance
+- **Update tests:** Modify tests to reflect changes in functionality, security requirements, or architecture
+- **Update documentation:** Ensure all documentation reflects the current technical decisions and security measures
 
 ## Development Communication Protocols
 
 ### Progress Updates
-- **Development milestones:** Report on completion of major features and components
-- **Code quality metrics:** Share insights on test coverage, performance, and code quality
+- **Development milestones:** Report on completion of major features, components, and quality metrics
+- **Code quality metrics:** Share insights on test coverage, performance benchmarks, security status, and DRY compliance
+- **Security status:** Communicate security implementation status and vulnerability assessment results
+- **Performance metrics:** Report on performance optimization and Core Web Vitals improvements
+- **SEO progress:** Update on SEO implementation and optimization achievements
 - **Technical challenges:** Communicate any significant technical hurdles and proposed solutions
 - **Architecture insights:** Share learnings about architectural decisions and their effectiveness
 
 ### Technical Decision Points
-- **Implementation choices:** Explain rationale behind specific technical implementation choices
-- **Trade-offs:** Clearly communicate performance, security, or maintainability trade-offs
-- **Alternative approaches:** When multiple technical solutions are viable, present options with pros/cons
+- **Implementation choices:** Explain rationale behind specific technical implementation choices, including security and performance considerations
+- **Trade-offs:** Clearly communicate performance, security, maintainability, and SEO trade-offs
+- **Alternative approaches:** When multiple technical solutions are viable, present options with pros/cons including security and performance implications
+- **Quality standards:** Discuss adherence to clean code principles, DRY implementation, and security best practices
 
-This development-focused workflow ensures systematic progress through application development while maintaining high standards for code quality, security, and performance throughout the entire development lifecycle.
+This development-focused workflow ensures systematic progress through application development while maintaining the highest standards for code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities throughout the entire development lifecycle.

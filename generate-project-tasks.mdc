@@ -7,7 +7,7 @@ alwaysApply: false
 
 ## Goal
 
-To guide an AI assistant in creating a comprehensive, phase-based task list in Markdown format based on an existing Project Specification Document (PSD). The task list should guide development of consistent, secure, and performant applications through systematic development phases, focusing purely on building high-quality code without deployment concerns.
+To guide an AI assistant in creating a comprehensive, phase-based task list in Markdown format based on an existing Project Specification Document (PSD). The task list should guide development of consistent, secure, performant, and SEO-optimized applications through systematic development phases, emphasizing clean code principles, DRY implementation, and zero-vulnerability development practices.
 
 ## Output
 
@@ -18,7 +18,7 @@ To guide an AI assistant in creating a comprehensive, phase-based task list in M
 ## Process
 
 1.  **Receive PSD Reference:** The user points the AI to a specific Project Specification Document file
-2.  **Analyze PSD:** The AI reads and analyzes all sections of the PSD, paying special attention to technical architecture, feature requirements, quality standards, and development phases
+2.  **Analyze PSD:** The AI reads and analyzes all sections of the PSD, paying special attention to technical architecture, feature requirements, quality standards, SEO requirements, and development phases
 3.  **Phase 1: Generate Development Phases:** Based on the PSD analysis, create the file and generate the main development phases. Present these phases to the user in the specified format. Inform the user: "I have generated the development phases based on the PSD. Ready to generate the detailed tasks for each phase? Respond with 'Go' to proceed."
 4.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go"
 5.  **Phase 2: Generate Detailed Tasks:** Once confirmed, break down each development phase into major tasks, and each major task into actionable sub-tasks
@@ -42,21 +42,23 @@ The generated project task list _must_ follow this structure:
 - `.env.example` - Environment variable template
 - `eslintrc.js` / `prettier.config.js` - Code quality and formatting configuration
 - `jest.config.js` / `vitest.config.js` - Testing configuration
+- `security.config.js` - Security scanning and vulnerability detection configuration
 
 ### Source Code Structure
 - `src/` - Main source code directory
-  - `components/` - Reusable UI components (frontend)
-  - `pages/` or `routes/` - Application pages/routes
+  - `components/` - Reusable UI components (frontend) following DRY principles
+  - `pages/` or `routes/` - Application pages/routes with SEO optimization
   - `services/` - Business logic and external service integrations  
-  - `utils/` - Utility functions and helpers
+  - `utils/` - Utility functions and helpers (DRY implementation)
   - `types/` or `models/` - Data types and models
   - `config/` - Application configuration
-  - `middleware/` - Request/response middleware
-  - `hooks/` - Custom hooks (if React/Vue)
+  - `middleware/` - Request/response middleware with security focus
+  - `hooks/` - Custom hooks (if React/Vue) following clean code principles
   - `stores/` or `state/` - State management
-- `tests/` - Test files (unit, integration, e2e)
+  - `constants/` - Application constants and enums
+- `tests/` - Test files (unit, integration, e2e, security)
 - `docs/` - Project documentation
-- `public/` or `static/` - Static assets (frontend)
+- `public/` or `static/` - Static assets with SEO optimization (images, meta files)
 - `styles/` or `assets/` - Styling and design assets
 
 ### Development Configuration
@@ -64,6 +66,7 @@ The generated project task list _must_ follow this structure:
 - `scripts/` - Development and build scripts
 - `config/` - Environment-specific configurations
 - `migrations/` - Database migration files (if applicable)
+- `seo/` - SEO configuration files (sitemaps, robots.txt, meta templates)
 
 ### Notes
 
@@ -72,6 +75,8 @@ The generated project task list _must_ follow this structure:
 - Follow framework-specific best practices for file organization
 - Include proper TypeScript configuration if using TypeScript
 - Ensure proper linting and formatting setup for code consistency
+- Implement security scanning tools and vulnerability detection
+- Follow DRY principles in all file organization and code structure
 
 ## Development Phases & Tasks
 
@@ -83,95 +88,112 @@ The generated project task list _must_ follow this structure:
   - [ ] 1.4 Set up development environment and build tools
   - [ ] 1.5 Configure environment variables and configuration management
 - [ ] 2.0 Code Quality and Standards Setup
-  - [ ] 2.1 Configure linting tools (ESLint, Pylint, etc.)
+  - [ ] 2.1 Configure linting tools (ESLint, Pylint, etc.) with security rules
   - [ ] 2.2 Set up code formatting (Prettier, Black, etc.)
-  - [ ] 2.3 Configure TypeScript (if applicable)
+  - [ ] 2.3 Configure TypeScript (if applicable) with strict settings
   - [ ] 2.4 Set up testing framework and configuration
-  - [ ] 2.5 Create coding standards and conventions document
+  - [ ] 2.5 Create coding standards and conventions document emphasizing clean code and DRY principles
+  - [ ] 2.6 Configure security scanning tools and vulnerability detection
+  - [ ] 2.7 Set up pre-commit hooks for code quality and security checks
 
 ### Phase 2: Core Architecture & Foundation
 - [ ] 3.0 Database Architecture
-  - [ ] 3.1 Design and implement database schema
-  - [ ] 3.2 Set up database connection and ORM/query layer
-  - [ ] 3.3 Implement data access patterns and repositories
-  - [ ] 3.4 Create database utilities and helpers
+  - [ ] 3.1 Design and implement secure database schema with proper validation
+  - [ ] 3.2 Set up database connection and ORM/query layer with performance optimization
+  - [ ] 3.3 Implement data access patterns and repositories following DRY principles
+  - [ ] 3.4 Create database utilities and helpers with security measures
 - [ ] 4.0 Authentication & Authorization
-  - [ ] 4.1 Implement user authentication system
-  - [ ] 4.2 Set up user registration and login flows
-  - [ ] 4.3 Configure session/token management
-  - [ ] 4.4 Implement role-based access control
+  - [ ] 4.1 Implement secure user authentication system with vulnerability prevention
+  - [ ] 4.2 Set up user registration and login flows with input validation
+  - [ ] 4.3 Configure session/token management with security best practices
+  - [ ] 4.4 Implement role-based access control with proper authorization checks
 - [ ] 5.0 Core Application Framework
-  - [ ] 5.1 Set up routing and navigation
-  - [ ] 5.2 Implement request validation and error handling
-  - [ ] 5.3 Configure state management (Redux, Vuex, etc.)
-  - [ ] 5.4 Set up API client and data fetching patterns
+  - [ ] 5.1 Set up routing and navigation with SEO-friendly URLs
+  - [ ] 5.2 Implement request validation and comprehensive error handling
+  - [ ] 5.3 Configure state management (Redux, Vuex, etc.) following clean architecture
+  - [ ] 5.4 Set up API client and data fetching patterns with error handling
 
 ### Phase 3: MVP Feature Development
 - [ ] 6.0 [Core Feature 1 from PSD]
-  - [ ] 6.1 [Sub-task for Feature 1]
-  - [ ] 6.2 [Sub-task for Feature 1]
+  - [ ] 6.1 [Sub-task for Feature 1 with SEO considerations]
+  - [ ] 6.2 [Sub-task for Feature 1 with security validation]
 - [ ] 7.0 [Core Feature 2 from PSD]
-  - [ ] 7.1 [Sub-task for Feature 2]
-  - [ ] 7.2 [Sub-task for Feature 2]
+  - [ ] 7.1 [Sub-task for Feature 2 following DRY principles]
+  - [ ] 7.2 [Sub-task for Feature 2 with performance optimization]
 - [ ] 8.0 User Interface Foundation
-  - [ ] 8.1 Implement responsive layout and navigation
-  - [ ] 8.2 Create reusable UI component library
-  - [ ] 8.3 Set up styling system (CSS-in-JS, SCSS, etc.)
-  - [ ] 8.4 Implement accessibility features
+  - [ ] 8.1 Implement responsive layout and navigation with accessibility
+  - [ ] 8.2 Create reusable UI component library following DRY principles
+  - [ ] 8.3 Set up styling system (CSS-in-JS, SCSS, etc.) with performance optimization
+  - [ ] 8.4 Implement accessibility features and WCAG compliance
+- [ ] 9.0 SEO Foundation
+  - [ ] 9.1 Implement meta tags and structured data
+  - [ ] 9.2 Set up URL structure and routing for SEO
+  - [ ] 9.3 Configure sitemap generation and robots.txt
+  - [ ] 9.4 Optimize page loading speeds and Core Web Vitals
 
 ### Phase 4: Advanced Features & Integration
-- [ ] 9.0 [Advanced Feature 1 from PSD]
-  - [ ] 9.1 [Sub-task for Advanced Feature 1]
-- [ ] 10.0 Third-party Integrations
-  - [ ] 10.1 Implement external API integrations
-  - [ ] 10.2 Set up payment processing (if applicable)
-  - [ ] 10.3 Configure email/notification services
-- [ ] 11.0 Advanced UI/UX Features
-  - [ ] 11.1 Implement advanced interactions and animations
-  - [ ] 11.2 Add progressive web app features (if applicable)
-  - [ ] 11.3 Optimize user experience and workflows
+- [ ] 10.0 [Advanced Feature 1 from PSD]
+  - [ ] 10.1 [Sub-task for Advanced Feature 1 with clean code principles]
+- [ ] 11.0 Third-party Integrations
+  - [ ] 11.1 Implement external API integrations with error handling
+  - [ ] 11.2 Set up payment processing (if applicable) with security measures
+  - [ ] 11.3 Configure email/notification services with validation
+- [ ] 12.0 Advanced UI/UX Features
+  - [ ] 12.1 Implement advanced interactions and animations with performance optimization
+  - [ ] 12.2 Add progressive web app features (if applicable)
+  - [ ] 12.3 Optimize user experience and workflows
 
 ### Phase 5: Testing & Quality Assurance
-- [ ] 12.0 Comprehensive Testing
-  - [ ] 12.1 Write unit tests for core functionality
-  - [ ] 12.2 Implement integration tests
-  - [ ] 12.3 Set up end-to-end testing
-  - [ ] 12.4 Perform security testing and vulnerability assessment
-- [ ] 13.0 Code Quality Review
-  - [ ] 13.1 Conduct comprehensive code review
-  - [ ] 13.2 Refactor and optimize code structure
-  - [ ] 13.3 Update documentation and comments
-  - [ ] 13.4 Ensure coding standards compliance
+- [ ] 13.0 Comprehensive Testing
+  - [ ] 13.1 Write unit tests for core functionality with high coverage
+  - [ ] 13.2 Implement integration tests with security scenarios
+  - [ ] 13.3 Set up end-to-end testing with user workflows
+  - [ ] 13.4 Perform security testing and vulnerability assessment
+  - [ ] 13.5 Conduct accessibility testing and validation
+- [ ] 14.0 Code Quality Review
+  - [ ] 14.1 Conduct comprehensive code review focusing on clean code principles
+  - [ ] 14.2 Refactor and optimize code structure following DRY principles
+  - [ ] 14.3 Update documentation and comments
+  - [ ] 14.4 Ensure coding standards compliance and security best practices
 
 ### Phase 6: Performance & Security Optimization
-- [ ] 14.0 Performance Optimization
-  - [ ] 14.1 Implement caching strategies
-  - [ ] 14.2 Optimize database queries and data access
-  - [ ] 14.3 Optimize frontend performance (bundling, lazy loading)
-  - [ ] 14.4 Add performance monitoring and profiling
-- [ ] 15.0 Security Hardening
-  - [ ] 15.1 Implement security best practices
-  - [ ] 15.2 Add input validation and sanitization
-  - [ ] 15.3 Configure HTTPS and security headers
-  - [ ] 15.4 Conduct security audit and penetration testing
-- [ ] 16.0 Final Documentation
-  - [ ] 16.1 Complete API documentation
-  - [ ] 16.2 Write user guides and help documentation
-  - [ ] 16.3 Create developer setup and contribution guides
-  - [ ] 16.4 Document architecture decisions and design patterns
+- [ ] 15.0 Performance Optimization
+  - [ ] 15.1 Implement caching strategies for optimal performance
+  - [ ] 15.2 Optimize database queries and data access patterns
+  - [ ] 15.3 Optimize frontend performance (bundling, lazy loading, code splitting)
+  - [ ] 15.4 Add performance monitoring and profiling tools
+  - [ ] 15.5 Optimize Core Web Vitals and page speed metrics
+- [ ] 16.0 Security Hardening
+  - [ ] 16.1 Implement comprehensive security best practices
+  - [ ] 16.2 Add input validation and sanitization throughout the application
+  - [ ] 16.3 Configure HTTPS and security headers
+  - [ ] 16.4 Conduct security audit and penetration testing
+  - [ ] 16.5 Ensure zero-vulnerability compliance
+- [ ] 17.0 SEO Enhancement
+  - [ ] 17.1 Optimize meta descriptions and title tags
+  - [ ] 17.2 Implement advanced structured data markup
+  - [ ] 17.3 Optimize images and media for search engines
+  - [ ] 17.4 Conduct SEO audit and implement improvements
+- [ ] 18.0 Final Documentation
+  - [ ] 18.1 Complete API documentation with examples
+  - [ ] 18.2 Write user guides and help documentation
+  - [ ] 18.3 Create developer setup and contribution guides
+  - [ ] 18.4 Document architecture decisions and design patterns
 ```
 
 ## Interaction Model
 
-The process explicitly requires a pause after generating development phases to get user confirmation ("Go") before proceeding to generate the detailed tasks. This ensures the high-level development plan aligns with user expectations before diving into implementation details.
+The process explicitly requires a pause after generating development phases to get user confirmation ("Go") before proceeding to generate the detailed tasks. This ensures the high-level development plan aligns with user expectations and emphasizes quality, security, and performance standards before diving into implementation details.
 
 ## Target Audience
 
-Assume the primary readers are **software developers** who will implement the complete application development lifecycle, focusing on code quality, security, and performance.
+Assume the primary readers are **software developers** who will implement the complete application development lifecycle, focusing on code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities.
 
 ## Customization Notes
 
 - Tasks should be adapted based on the specific technology stack mentioned in the PSD
 - Feature-specific tasks (phases 3-4) should be generated based on the actual features defined in the PSD
-- Testing and security tasks should match the quality standards outlined in the PSD
+- Testing, security, and SEO tasks should match the quality standards outlined in the PSD
+- Emphasize DRY principles and clean code practices throughout all phases
 - Remove or add phases based on project complexity and requirements
+- Ensure all tasks include security considerations and vulnerability prevention
