@@ -208,4 +208,60 @@ Execute these validation checks after each major task completion:
 - **Alternative approaches:** When multiple technical solutions are viable, present options with pros/cons including security and performance implications
 - **Quality standards:** Discuss adherence to clean code principles, DRY implementation, and security best practices
 
+## Process
+
+1. **Analyze Task Context:** Understand which phase and task you're working on from the project task list. Review:
+   - **PSD Reference:** Check the original Project Specification Document for technical decisions and requirements
+   - **Project Complexity:** Understand if this is a Simple/Medium/Complex project to adjust approach
+   - **Technology Stack:** Ensure you're using the correct technologies specified in the PSD
+   - **Feature Prioritization:** Focus on MVP features first, then additional features based on MoSCoW prioritization
+   - **Cross-Platform Requirements:** Consider device support, browser compatibility, and accessibility standards
+   - **Quality Standards:** Apply the security, performance, and SEO requirements from the PSD
+
+2. **Technology-Aware Implementation:** Based on the PSD technology decisions:
+   - **Follow Architecture Patterns:** Implement using the architecture patterns specified in the PSD
+   - **Use Specified Tools:** Ensure you're using the exact frameworks, libraries, and tools chosen in the PSD
+   - **Maintain Consistency:** Keep implementation consistent with technology decisions and rationale
+   - **Cross-Platform Compliance:** Implement features that work across all specified devices and browsers
+   - **Progressive Enhancement:** Start with core functionality, then add enhanced features for capable devices
+
+3. **Complexity-Adjusted Implementation:**
+   - **Simple Projects:** Focus on direct implementation with minimal abstraction
+   - **Medium Projects:** Implement with moderate abstraction and reusable components
+   - **Complex Projects:** Use advanced patterns, extensive abstraction, and comprehensive testing
+   - **Feature Dependencies:** Respect the feature dependency mapping from the PSD
+   - **MVP Focus:** Prioritize MUST HAVE features, then SHOULD HAVE, then COULD HAVE
+
 Follow this development-focused workflow to ensure systematic progress through application development while maintaining the highest standards for code quality, security, performance, SEO optimization, and clean code principles with zero tolerance for vulnerabilities throughout the entire development lifecycle.
+
+## Development Workflow
+
+### For Each Major Task (e.g., 1.0, 2.0, 3.0):
+
+1. **Pre-Implementation Review:**
+   - Read and understand the task requirements thoroughly
+   - Check dependencies on previous tasks and ensure they're completed
+   - Review the PSD for specific requirements, constraints, and quality standards
+   - Plan the implementation approach considering complexity level and cross-platform requirements
+
+2. **Implementation Phase:**
+   - Break down the major task into logical sub-tasks
+   - Implement each sub-task following clean code principles and DRY methodology
+   - Write clean, readable code with meaningful variable names and proper commenting
+   - Apply security-first development practices with input validation and sanitization
+   - Implement responsive design and cross-platform compatibility from the start
+   - Follow the technology stack and architecture patterns specified in the PSD
+
+3. **Quality Validation (After Each Major Task):**
+   - **Code Quality:** Run linting, formatting checks, and ensure adherence to coding standards
+   - **Security:** Perform vulnerability scanning, dependency checking, and security code review
+   - **Performance:** Test load times, optimize bottlenecks, validate Core Web Vitals
+   - **Functionality:** Execute unit tests, integration tests, and manual testing
+   - **Cross-Platform:** Test responsiveness, browser compatibility, and device functionality
+   - **Accessibility:** Validate WCAG compliance and screen reader compatibility
+   - **SEO:** Check meta tags, structured data, and search engine optimization elements
+
+4. **Documentation:**
+   - Document any architectural decisions or implementation choices
+   - Update code comments and inline documentation
+   - Note any deviations from the original plan and rationale

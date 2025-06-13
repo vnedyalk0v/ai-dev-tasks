@@ -25,20 +25,45 @@ Adapt your questions based on the prompt, but here are key areas to explore:
 *   **Target Audience:** "Who are the primary users of this application?"
 *   **Core Value Proposition:** "What key problem does this application solve, and what makes it unique?"
 *   **Project Scale:** "Is this a small utility, medium web app, or large-scale application?"
+*   **Project Complexity Assessment:** Evaluate based on these factors:
+    - "How many different user roles will the system have? (1=Simple, 2-3=Medium, 4+=Complex)"
+    - "How many core features are planned? (1-3=Simple, 4-7=Medium, 8+=Complex)"
+    - "Will this integrate with multiple external systems? (None=Simple, 1-2=Medium, 3+=Complex)"
+    - "What is the expected data complexity? (Static=Simple, CRUD=Medium, Complex relationships=Complex)"
+    - "What are the performance requirements? (Standard=Simple, High traffic=Medium, Real-time/Mission critical=Complex)"
 
 ### Technical Requirements
 *   **Platform:** "What platforms should this run on? (Web, mobile, desktop, etc.)"
-*   **Technology Stack:** "Do you have preferences for programming languages, frameworks, or databases?"
+*   **Technology Stack Decision:** Ask these guided questions:
+    - "What is your team's current expertise? (JavaScript, Python, Java, etc.)"
+    - "What are your performance requirements? (Real-time, standard web app, etc.)"
+    - "What is your expected user base size? (Hundreds, thousands, millions)"
+    - "Do you need offline functionality or PWA features?"
+    - "Are there any technology constraints or preferences from stakeholders?"
+    - "What is your hosting/infrastructure preference? (Cloud, on-premise, static hosting)"
 *   **Architecture:** "Any specific architectural patterns or constraints? (MVC, component-based, etc.)"
 *   **Data Requirements:** "Does this application need to store, process, or manage data? If so, what type of data and storage approach?"
 *   **Integrations:** "Does this need to integrate with external services, APIs, or existing systems?"
 *   **Performance:** "Are there specific performance requirements or expected user loads?"
 
 ### Features & Functionality
-*   **Core Features:** "What are the 3-5 most important features this application must have?"
+*   **MVP Definition & Feature Prioritization:** Use MoSCoW method:
+    - "MUST HAVE: What are the 3-5 absolutely essential features for launch?"
+    - "SHOULD HAVE: What features are important but not critical for initial launch?"
+    - "COULD HAVE: What features would be nice to have if time/budget allows?"
+    - "WON'T HAVE (this time): What features are explicitly excluded from this version?"
+*   **Feature Dependencies:** "Are there any features that depend on others being completed first?"
 *   **User Roles:** "Are there different types of users with different permissions/capabilities?"
 *   **Data Management:** "What kind of data will be stored, processed, or displayed?"
 *   **User Interface:** "Any specific UI/UX requirements or design preferences?"
+
+### Cross-Platform Considerations
+*   **Device Support:** "What devices must this work on? (Desktop, tablet, mobile, all)"
+*   **Browser Support:** "Which browsers and versions need to be supported?"
+*   **Responsive Design Requirements:** "What are the breakpoints and responsive behavior requirements?"
+*   **Accessibility Standards:** "What level of accessibility compliance is required? (WCAG AA recommended)"
+*   **Offline Functionality:** "Does the app need to work offline or with poor connectivity?"
+*   **Progressive Web App:** "Should this be a PWA with installable capabilities?"
 
 ### Quality & Standards
 *   **Security Requirements:** "Any specific security requirements or sensitive data handling needs?"
@@ -71,19 +96,33 @@ Generate the PSD with the following sections:
 
 ### 3. Technical Architecture
 *   **Technology Stack:** Programming languages, frameworks, databases, tools
+*   **Technology Decision Rationale:** Document why specific technologies were chosen based on:
+    - Team expertise and learning curve
+    - Performance requirements and scalability needs
+    - Integration requirements and ecosystem compatibility
+    - Long-term maintenance and community support
+    - Hosting and deployment considerations
 *   **System Architecture:** High-level architecture description and patterns
 *   **Development Environment:** Local development setup requirements
 *   **Security Architecture:** Authentication, authorization, data protection approaches
 *   **Integration Requirements:** External APIs, services, or systems
 
-### 4. Feature Requirements
+### 4. Project Assessment & Planning
+*   **Complexity Score:** Based on assessment answers (Simple/Medium/Complex)
+*   **Feature Prioritization:** MoSCoW categorization of all features
+*   **MVP Definition:** Clear definition of minimum viable product
+*   **Feature Dependencies:** Mapping of which features depend on others
+*   **Cross-Platform Requirements:** Device, browser, and accessibility specifications
+*   **Development Timeline:** Estimated timeline based on complexity and team size
+
+### 5. Feature Requirements
 *   **Core Features:** Essential functionality (MVP features)
 *   **User Stories:** Detailed user narratives for key workflows
 *   **User Roles & Permissions:** Different user types and their capabilities
 *   **Data Model:** Key entities and relationships
 *   **API Requirements:** External interfaces needed
 
-### 5. Quality Standards
+### 6. Quality Standards
 *   **Performance Requirements:** Response times, load handling, optimization targets, Core Web Vitals
 *   **Security Requirements:** Data protection, authentication standards, zero-vulnerability mandate
 *   **SEO Requirements:** Meta tags, structured data, page speed, mobile-first indexing, content optimization
@@ -91,7 +130,7 @@ Generate the PSD with the following sections:
 *   **Browser/Device Compatibility:** Support requirements and responsive design needs
 *   **Accessibility Standards:** WCAG compliance levels and accessibility features
 
-### 6. Development Phases
+### 7. Development Phases
 *   **Phase 1: Project Setup & Development Environment:** Repository structure, development environment, coding standards, security tools, quality validation setup
 *   **Phase 2: Core Architecture & Foundation:** Database design (if required), authentication (if required), foundational components, security implementation
 *   **Phase 3: MVP Feature Development:** Essential user-facing functionality with SEO optimization, continuous quality validation
@@ -99,7 +138,7 @@ Generate the PSD with the following sections:
 *   **Phase 5: Testing & Quality Assurance:** Comprehensive testing, code review, vulnerability assessment, quality validation
 *   **Phase 6: Performance & Security Optimization:** Performance tuning, security hardening, SEO enhancement, final quality validation
 
-### 7. Development Standards
+### 8. Development Standards
 *   **clean code principles:** SOLID principles, readable code, meaningful naming, single responsibility
 *   **DRY Implementation:** Don't Repeat Yourself - modular, reusable components and utilities
 *   **Coding Conventions:** Style guides, naming conventions, file organization
@@ -109,7 +148,7 @@ Generate the PSD with the following sections:
 *   **Performance Guidelines:** Optimization strategies, monitoring approaches, lazy loading
 *   **Quality Validation:** Continuous linting, formatting checks, security scanning, performance testing after each task
 
-### 8. Technical Considerations
+### 9. Technical Considerations
 *   **Data Persistence:** Database schema planning, indexing, performance considerations (only if data storage is required)
 *   **State Management:** Client-side state handling and data flow patterns
 *   **Error Handling:** Comprehensive error management strategies and user feedback
@@ -119,7 +158,7 @@ Generate the PSD with the following sections:
 *   **SEO Implementation:** URL structure, meta data, structured markup, sitemap generation
 *   **Security Implementation:** Input sanitization, authentication, authorization, data encryption
 
-### 9. Open Questions
+### 10. Open Questions
 *   List any remaining questions or areas needing further clarification
 *   Technical decisions that need to be made
 *   External dependencies to confirm

@@ -108,21 +108,22 @@ You'll see steady progress through:
 
 ## 🛠️ How to Use
 
-1.  **Clone or Download:** Get these `.mdc` files into your project workspace where Cursor can access them
-2.  **Follow the Development Workflow:** Use the 5-step workflow above for systematic, quality-focused development
-3.  **Customize as Needed:**
-    - Modify the prompts within the `.mdc` files to match your specific requirements
-    - Adjust the development phases based on your project type and complexity
-    - Add additional quality gates or code review points as needed
+1. **Create Project Specification:** Use `create-project-spec.mdc` to gather comprehensive project requirements including technology decisions, complexity assessment, and feature prioritization
+
+2. **Generate Task Roadmap:** Use `generate-project-tasks.mdc` to create a detailed 6-phase development plan with complexity-adjusted tasks and cross-platform considerations
+
+3. **Execute Development:** Use `process-project-tasks.mdc` to systematically implement each task with quality validation, security scanning, and performance optimization
 
 ## 💡 Tips for Success
 
-- **Be Comprehensive:** Provide detailed project requirements in your initial description - the more context, the better the AI's output
-- **Technology Stack Clarity:** Clearly specify your preferred technologies, frameworks, and architectural patterns
-- **Phase-by-Phase Focus:** Don't rush through phases - each phase builds the foundation for the next with proper quality checks
-- **Quality Gates:** Use the built-in approval checkpoints to ensure code quality before moving to complex phases
-- **Documentation:** Maintain comprehensive code documentation as you progress through phases
-- **Testing Strategy:** Implement testing throughout development, not just at the end
+- **Start with Thorough Planning:** Complete the Project Specification Document before generating tasks
+- **Assess Complexity Early:** Use the complexity assessment to right-size your approach
+- **Prioritize Ruthlessly:** Focus on MVP features first, resist scope creep
+- **Design for All Devices:** Implement responsive design and accessibility from the beginning
+- **Security First:** Apply the zero-vulnerability mandate throughout development
+- **Validate Early and Often:** Run quality validation after every major task
+- **Document Technology Decisions:** Keep track of why specific technologies were chosen
+- **Test Cross-Platform:** Verify functionality across all target devices and browsers
 
 ## 📊 Project Types Supported
 
@@ -152,3 +153,52 @@ Please feel free to:
 ---
 
 Happy AI-assisted development!
+
+This framework provides structured guidance for AI assistants to build entire applications from concept to completion. It addresses the consistency, security, and performance issues that arise when building projects without systematic guidance.
+
+## Framework Components
+
+### 1. Project Specification Document (`create-project-spec.mdc`)
+
+Create comprehensive project specifications with:
+
+- **Technology Stack Decision Framework:** Guided questions to select optimal technologies
+- **Project Complexity Assessment:** Systematic evaluation to match tasks to project scope
+- **MVP Definition & Feature Prioritization:** MoSCoW method for focused development
+- **Cross-Platform Considerations:** Device support, browser compatibility, accessibility standards
+- Technical architecture and integration requirements
+- Quality standards and SEO optimization requirements
+
+### 2. Project Task Generation (`generate-project-tasks.mdc`)
+
+Generate detailed 6-phase development roadmaps with:
+
+- **Complexity-Based Task Adjustment:** Granularity matching Simple/Medium/Complex projects
+- **Cross-Platform Foundation Setup:** Responsive design and accessibility from day one
+- **Feature Dependency Management:** Proper sequencing based on PSD prioritization
+- **Conditional Task Logic:** Database and authentication tasks only when needed
+- Quality validation after every major task
+- Emphasis on clean code principles and DRY methodology
+
+### 3. Project Task Processing (`process-project-tasks.mdc`)
+
+Execute tasks systematically with:
+
+- **Technology-Aware Implementation:** Following PSD architecture and tool decisions
+- **Complexity-Adjusted Approaches:** Implementation patterns matching project complexity
+- **MVP-Focused Development:** Prioritizing MUST HAVE → SHOULD HAVE → COULD HAVE features
+- **Cross-Platform Validation:** Testing responsiveness, browser compatibility, accessibility
+- Zero-vulnerability development with comprehensive security validation
+- Performance optimization and SEO compliance throughout development
+
+## Key Features
+
+- **Technology Decision Guidance:** Systematic approach to selecting optimal tech stacks
+- **Complexity-Aware Planning:** Task granularity matching project complexity (Simple/Medium/Complex)
+- **MVP-Driven Development:** MoSCoW prioritization preventing scope creep
+- **Cross-Platform Excellence:** Responsive design, accessibility, and browser compatibility built-in
+- **Zero-Vulnerability Mandate:** Security scanning and validation at every step
+- **Performance First:** Core Web Vitals optimization and performance monitoring throughout
+- **SEO Optimization:** Search engine optimization integrated into development process
+- **Clean Code Enforcement:** DRY principles and maintainable code practices
+- **Quality Validation:** Comprehensive testing and validation after each major task
