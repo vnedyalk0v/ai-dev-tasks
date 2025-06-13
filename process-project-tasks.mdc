@@ -217,15 +217,22 @@ Execute these validation checks after each major task completion:
    - **Feature Prioritization:** Focus on MVP features first, then additional features based on MoSCoW prioritization
    - **Cross-Platform Requirements:** Consider device support, browser compatibility, and accessibility standards
    - **Quality Standards:** Apply the security, performance, and SEO requirements from the PSD
+   - **Project Structure:** Review the project-structure.md file (created in Phase 1) to understand current file organization and purposes
 
-2. **Technology-Aware Implementation:** Based on the PSD technology decisions:
+2. **Validate Working Context:** Before any implementation:
+   - **Confirm Working Directory:** Verify you are working in the correct project directory (not root, not parent folders)
+   - **Check Project Structure:** Reference project-structure.md to understand where files should be created
+   - **Validate File Paths:** Ensure all file operations stay within the project boundaries
+   - **Review Existing Files:** Check what files already exist and their purposes to avoid duplication
+
+3. **Technology-Aware Implementation:** Based on the PSD technology decisions:
    - **Follow Architecture Patterns:** Implement using the architecture patterns specified in the PSD
    - **Use Specified Tools:** Ensure you're using the exact frameworks, libraries, and tools chosen in the PSD
    - **Maintain Consistency:** Keep implementation consistent with technology decisions and rationale
    - **Cross-Platform Compliance:** Implement features that work across all specified devices and browsers
    - **Progressive Enhancement:** Start with core functionality, then add enhanced features for capable devices
 
-3. **Complexity-Adjusted Implementation:**
+4. **Complexity-Adjusted Implementation:**
    - **Simple Projects:** Focus on direct implementation with minimal abstraction
    - **Medium Projects:** Implement with moderate abstraction and reusable components
    - **Complex Projects:** Use advanced patterns, extensive abstraction, and comprehensive testing
@@ -243,14 +250,17 @@ Follow this development-focused workflow to ensure systematic progress through a
    - Check dependencies on previous tasks and ensure they're completed
    - Review the PSD for specific requirements, constraints, and quality standards
    - Plan the implementation approach considering complexity level and cross-platform requirements
+   - **Review project-structure.md to understand current file organization and identify where new files should be created**
 
 2. **Implementation Phase:**
    - Break down the major task into logical sub-tasks
+   - **Before creating any files: confirm working directory and validate file paths against project structure**
    - Implement each sub-task following clean code principles and DRY methodology
    - Write clean, readable code with meaningful variable names and proper commenting
    - Apply security-first development practices with input validation and sanitization
    - Implement responsive design and cross-platform compatibility from the start
    - Follow the technology stack and architecture patterns specified in the PSD
+   - **Update project-structure.md immediately when creating new files or directories**
 
 3. **Quality Validation (After Each Major Task):**
    - **Code Quality:** Run linting, formatting checks, and ensure adherence to coding standards
@@ -260,8 +270,11 @@ Follow this development-focused workflow to ensure systematic progress through a
    - **Cross-Platform:** Test responsiveness, browser compatibility, and device functionality
    - **Accessibility:** Validate WCAG compliance and screen reader compatibility
    - **SEO:** Check meta tags, structured data, and search engine optimization elements
+   - **Project Structure:** Verify all files are in correct locations and project-structure.md is up-to-date
 
 4. **Documentation:**
    - Document any architectural decisions or implementation choices
    - Update code comments and inline documentation
    - Note any deviations from the original plan and rationale
+   - **Update project-structure.md with any new files, directories, or structural changes**
+   - **Document the purpose and responsibility of each new file created**

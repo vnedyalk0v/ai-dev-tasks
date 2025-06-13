@@ -98,7 +98,9 @@ Generate the project task list following this structure exactly:
   - [ ] 1.3 Configure package management and dependencies
   - [ ] 1.4 Set up development environment and build tools
   - [ ] 1.5 Configure environment variables and configuration management
-  - [ ] 1.6 Run quality validation: verify setup, check configurations
+  - [ ] 1.6 **Create project structure documentation (project-structure.md) listing all directories and their purposes**
+  - [ ] 1.7 **Establish working directory context and validate all file operations stay within project boundaries**
+  - [ ] 1.8 Run quality validation: verify setup, check configurations
 - [ ] 2.0 Code Quality and Standards Setup
   - [ ] 2.1 Configure linting tools (ESLint, Pylint, etc.) with security rules
   - [ ] 2.2 Set up code formatting (Prettier, Black, etc.)
@@ -107,14 +109,16 @@ Generate the project task list following this structure exactly:
   - [ ] 2.5 Create coding standards and conventions document emphasizing clean code and DRY principles
   - [ ] 2.6 Configure security scanning tools and vulnerability detection
   - [ ] 2.7 Set up pre-commit hooks for code quality and security checks
-  - [ ] 2.8 Run quality validation: test all tools, verify configurations work correctly
+  - [ ] 2.8 **Update project structure documentation with new tool configurations**
+  - [ ] 2.9 Run quality validation: test all tools, verify configurations work correctly
 - [ ] 3.0 Cross-Platform & Responsive Foundation
   - [ ] 3.1 Set up responsive design system and breakpoints
   - [ ] 3.2 Configure browser compatibility testing tools
   - [ ] 3.3 Set up accessibility testing tools and standards
   - [ ] 3.4 Configure PWA setup (if required by PSD)
   - [ ] 3.5 Set up device testing environment (responsive design tools)
-  - [ ] 3.6 Run quality validation: test responsiveness, accessibility baseline
+  - [ ] 3.6 **Update project structure documentation with frontend tooling and asset organization**
+  - [ ] 3.7 Run quality validation: test responsiveness, accessibility baseline
 
 ### Phase 2: Core Architecture & Foundation
 - [ ] 4.0 Database Architecture (ONLY if the project requires data storage)
@@ -238,6 +242,7 @@ Target the task list for **software developers** who will implement the complete
 - **IMPORTANT: Include database tasks (4.0) ONLY if the PSD indicates data storage/persistence requirements**
 - **IMPORTANT: Include authentication tasks (5.0) ONLY if the PSD indicates user management requirements**
 - **IMPORTANT: Include PWA tasks (3.4, 13.2) ONLY if the PSD specifies PWA requirements**
+- **CRITICAL: Always include project structure documentation tasks (1.6, 2.8, 3.6) to prevent directory confusion and file duplication**
 - Match testing, security, and SEO tasks to the quality standards outlined in the PSD
 - Emphasize DRY principles and clean code practices throughout all phases
 - Ensure cross-platform considerations are addressed based on PSD device/browser requirements

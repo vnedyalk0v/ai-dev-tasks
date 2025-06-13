@@ -1,0 +1,154 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Project Structure Management Guide
+
+## Purpose
+
+This guide helps AI maintain consistent project organization and prevents common mistakes like creating files in wrong directories or duplicating functionality. Use this to create and maintain the `project-structure.md` file in every project.
+
+## Critical Rules for AI Development
+
+### 1. Working Directory Validation
+- **ALWAYS verify working directory before creating files**
+- **NEVER create files outside the project root or designated code directory**
+- **If project code is in a subfolder (e.g., `./src/`, `./app/`, `./client/`), ALWAYS work within that subfolder**
+- **Before each file operation, confirm the current working directory with `pwd` or equivalent**
+
+### 2. File Purpose Tracking
+- **EVERY file created must be documented in project-structure.md immediately**
+- **Include the file's purpose, responsibility, and relationship to other files**
+- **Before creating a new file, check if similar functionality already exists**
+- **Reference project-structure.md before implementing any new functionality**
+
+### 3. Directory Organization Principles
+- **Group related files in logical directories**
+- **Follow established naming conventions consistently**
+- **Document the purpose of each directory**
+- **Maintain clear separation of concerns between directories**
+
+## Project Structure Documentation Template
+
+Create this structure in `project-structure.md` during Phase 1, Task 1.6:
+
+```markdown
+# Project Structure Documentation
+
+## Project Root: [PROJECT_NAME]
+**Working Directory:** `/path/to/project/` or `/path/to/project/src/` (if code is in subfolder)
+
+## Directory Structure
+
+### Root Level
+- `package.json` / `requirements.txt` / `Cargo.toml` - Project dependencies and metadata
+- `README.md` - Project documentation and setup instructions
+- `.gitignore` - Git ignore patterns
+- `.env.example` - Environment variables template
+- `[config files]` - ESLint, Prettier, TypeScript, etc. configurations
+
+### Source Code Directory: `./src/` (or main code directory)
+- **Purpose:** Contains all application source code
+- **Contents:**
+  - `main.js` / `index.js` / `app.py` - Application entry point
+  - `[component directories]` - Organized by feature or type
+
+### [Add other directories as created]
+
+## File Registry
+
+### Core Files
+| File Path | Purpose | Dependencies | Last Updated |
+|-----------|---------|---------------|--------------|
+| `src/index.js` | Application entry point | None | [Date] |
+| `src/components/Header.js` | Main navigation component | React | [Date] |
+
+### Configuration Files
+| File Path | Purpose | Dependencies | Last Updated |
+|-----------|---------|---------------|--------------|
+| `package.json` | Project metadata and dependencies | npm/yarn | [Date] |
+| `.eslintrc.js` | Code linting configuration | ESLint | [Date] |
+
+## Development Notes
+- **Current Phase:** [Phase Number and Name]
+- **Next File Locations:** [Where upcoming files should be created]
+- **Architecture Decisions:** [Key structural decisions made]
+
+## Validation Checklist
+- [ ] All files are within project boundaries
+- [ ] No duplicate functionality across files
+- [ ] File purposes are clearly documented
+- [ ] Directory structure follows project conventions
+- [ ] Working directory is correct for all operations
+```
+
+## Implementation Instructions
+
+### During Project Setup (Phase 1)
+1. **Create project-structure.md** using the template above
+2. **Document initial project structure** including any existing files
+3. **Establish working directory context** and document it clearly
+4. **Set up directory organization** based on the technology stack
+
+### During Development (All Phases)
+1. **Before creating any file:**
+   - Check current working directory
+   - Review project-structure.md for existing similar functionality
+   - Determine correct location based on file purpose
+2. **After creating any file:**
+   - Update project-structure.md File Registry immediately
+   - Document the file's purpose and dependencies
+   - Note any architectural decisions
+
+### Before Each Major Task
+1. **Review project-structure.md** to understand current organization
+2. **Validate working directory** matches project structure documentation
+3. **Plan file locations** for upcoming implementation
+4. **Check for existing functionality** that might be duplicated
+
+## Common Mistake Prevention
+
+### Directory Confusion Prevention
+- **Always reference project-structure.md before file operations**
+- **Use relative paths from documented working directory**
+- **Validate file paths against project structure before creation**
+- **Never assume directory structure - always check documentation**
+
+### File Duplication Prevention
+- **Search existing files** for similar functionality before creating new ones
+- **Document file purposes clearly** to avoid functional overlap
+- **Review File Registry** before implementing new features
+- **Consolidate duplicate functionality** when discovered
+
+### Structure Validation Commands
+Include these validation steps in quality checks:
+- Check all files are within project boundaries
+- Verify no functionality duplication exists
+- Confirm project-structure.md is up-to-date
+- Validate directory organization follows conventions
+
+## Emergency Recovery
+
+### If Directory Structure Gets Confused
+1. **Stop all file operations immediately**
+2. **Review project-structure.md** to understand intended structure
+3. **Audit current file locations** against documentation
+4. **Move misplaced files** to correct locations
+5. **Update project-structure.md** to reflect current state
+
+### If File Purposes Get Mixed Up
+1. **Review all files in project** and their current functionality
+2. **Update File Registry** with accurate purposes and dependencies
+3. **Identify and consolidate** any duplicate functionality
+4. **Refactor** if necessary to maintain clean architecture
+
+## Integration with Development Workflow
+
+This project structure management integrates with:
+- **Phase 1 setup** - Initial structure creation
+- **Quality validation** - Structure verification after each major task
+- **Documentation updates** - Continuous structure maintenance
+- **Code review** - Structure compliance checking
+
+Remember: **Consistent project structure is essential for maintainable, scalable applications. Always prioritize structure validation over implementation speed.**

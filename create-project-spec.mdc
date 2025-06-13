@@ -11,14 +11,17 @@ Create a comprehensive Project Specification Document (PSD) in Markdown format f
 
 ## Process
 
-1.  **Receive Initial Prompt:** The user provides a brief description or request for a new application project.
-2.  **Ask Clarifying Questions:** Before writing the PSD, you *must* ask clarifying questions to gather sufficient detail about the project scope, technical requirements, and quality standards.
-3.  **Generate PSD:** Based on the initial prompt and the user's answers, generate a PSD using the structure outlined below.
-4.  **Save PSD:** Save the generated document as `project-spec-[project-name].md` inside the `/project/` directory.
+1.  **Receive Initial Input:** Handle both structured and free-form project descriptions:
+    - **For Structured Template Input:** If user provides a `project-information.md` file or similar structured template, parse all filled sections and extract the provided information
+    - **For Direct Description Input:** If user provides a free-form project description, analyze the description to understand project scope and requirements
+2.  **Identify Information Gaps:** Determine what information is missing or needs clarification based on the input type
+3.  **Ask Clarifying Questions:** Before writing the PSD, ask targeted clarifying questions to gather sufficient detail about project scope, technical requirements, and quality standards
+4.  **Generate PSD:** Based on the initial input and the user's answers, generate a comprehensive PSD using the structure outlined below
+5.  **Save PSD:** Save the generated document as `project-spec-[project-name].md` inside the `/project/` directory
 
 ## Clarifying Questions (Examples)
 
-Adapt your questions based on the prompt, but here are key areas to explore:
+Adapt your questions based on the input provided, focusing on areas that need clarification:
 
 ### Project Scope & Vision
 *   **Project Vision:** "What is the overall vision and main purpose of this application?"
@@ -176,7 +179,7 @@ Target this for **software developers** who will implement the application. Prov
 ## Final Instructions
 
 1. Do NOT start implementing the project
-2. Ask comprehensive clarifying questions covering all major development areas
+2. Ask comprehensive clarifying questions covering all major development areas (skip questions already answered in structured input)
 3. Take the user's answers and create a thorough, development-focused PSD
 4. Focus on ensuring consistency, security, performance, SEO, and clean code in application development
 5. Emphasize zero-vulnerability development and DRY principles throughout
